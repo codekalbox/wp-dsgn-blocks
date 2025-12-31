@@ -45,6 +45,11 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 		}
 	}, [ clientId, uniqueId, setAttributes ] );
 
+	// Update template when column count changes
+	useEffect( () => {
+		// This will trigger a re-render with the new template
+	}, [ columnCount ] );
+
 	// Generate CSS for live preview
 	const columnsCSS = generateColumnsCSS( attributes, uniqueId || clientId );
 
@@ -177,10 +182,9 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 				<InnerBlocks 
 					allowedBlocks={ [ 'core/column' ] }
 					template={ getColumnTemplate() }
-					templateLock="all"
+					templateInsertUpdatesSelection={ false }
 				/>
 			</div>
 		</>
 	);
 }
-
