@@ -1,0 +1,49 @@
+/**
+ * Columns Block Editor Styles
+ */
+
+.wp-block-flexblocks-columns {
+	// Editor-specific styles
+	&.is-selected {
+		outline: 1px dashed #007cba;
+		outline-offset: -1px;
+	}
+
+	.flexblocks-column {
+		position: relative;
+		border: 1px dashed transparent;
+		transition: border-color 0.2s ease;
+
+		&:hover {
+			border-color: #007cba;
+		}
+
+		// Ensure blocks inside columns are properly styled
+		> .block-editor-inner-blocks {
+			> .block-editor-block-list__layout {
+				padding: 8px;
+				min-height: 50px;
+
+				// Empty state
+				&:empty::before {
+					content: "Add blocks";
+					color: #999;
+					font-size: 13px;
+					font-style: italic;
+					display: block;
+					text-align: center;
+					padding: 20px;
+				}
+			}
+		}
+	}
+}
+
+// Block appender styling
+.wp-block-flexblocks-columns {
+	.block-list-appender {
+		margin: 0;
+		width: 100%;
+	}
+}
+
