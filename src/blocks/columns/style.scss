@@ -1,0 +1,105 @@
+/**
+ * Columns Block - Frontend Styles
+ */
+
+.wpdsgn-columns {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	
+	// Default gap
+	gap: 20px;
+	
+	// Default alignment
+	align-items: stretch;
+	justify-content: flex-start;
+	
+	// Column styles
+	> .wp-block-column {
+		flex: 1;
+		min-width: 0;
+		box-sizing: border-box;
+		
+		// Ensure nested blocks don't overflow
+		> * {
+			max-width: 100%;
+		}
+		
+		// Handle nested blocks
+		.wp-block {
+			max-width: 100%;
+		}
+	}
+	
+	// Responsive behavior
+	@media (max-width: 768px) {
+		// Default mobile stacking
+		flex-direction: column;
+		
+		> .wp-block-column {
+			flex: 1 1 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+// Column count specific styles
+.wpdsgn-columns-1 > .wp-block-column {
+	flex: 1 1 100%;
+}
+
+.wpdsgn-columns-2 > .wp-block-column {
+	flex: 1 1 calc(50% - 10px);
+}
+
+.wpdsgn-columns-3 > .wp-block-column {
+	flex: 1 1 calc(33.333% - 14px);
+}
+
+.wpdsgn-columns-4 > .wp-block-column {
+	flex: 1 1 calc(25% - 15px);
+}
+
+.wpdsgn-columns-5 > .wp-block-column {
+	flex: 1 1 calc(20% - 16px);
+}
+
+.wpdsgn-columns-6 > .wp-block-column {
+	flex: 1 1 calc(16.666% - 17px);
+}
+
+// Equal height columns
+.wpdsgn-columns.wpdsgn-equal-height {
+	align-items: stretch;
+	
+	> .wp-block-column {
+		display: flex;
+		flex-direction: column;
+		
+		> * {
+			flex-grow: 1;
+		}
+	}
+}
+
+// Reverse columns
+.wpdsgn-columns.wpdsgn-reverse {
+	flex-direction: row-reverse;
+}
+
+// Mobile stacking
+@media (max-width: 768px) {
+	.wpdsgn-columns.wpdsgn-stack-mobile {
+		flex-direction: column;
+		
+		> .wp-block-column {
+			flex: 1 1 100%;
+			max-width: 100%;
+		}
+	}
+	
+	.wpdsgn-columns.wpdsgn-stack-reverse {
+		flex-direction: column-reverse;
+	}
+}
+

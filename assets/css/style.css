@@ -1,48 +1,110 @@
 /**
- * FlexBlocks Layout Builder - Frontend Styles
+ * WP DSGN Blocks - Frontend Styles
  * 
- * Global styles that apply to all FlexBlocks blocks on the frontend.
+ * Global styles for all blocks on the frontend.
  */
 
-/* Reset and base styles */
-.wp-block-flexblocks-section,
-.wp-block-flexblocks-columns {
+/* CSS Custom Properties */
+:root {
+	--wpdsgn-breakpoint-tablet: 1024px;
+	--wpdsgn-breakpoint-mobile: 768px;
+	--wpdsgn-container-max-width: 1200px;
+	--wpdsgn-section-padding: 20px;
+	--wpdsgn-column-gap: 20px;
+	--wpdsgn-border-radius: 4px;
+	--wpdsgn-transition: all 0.3s ease;
+}
+
+/* Global Block Styles */
+.wpdsgn-section,
+.wpdsgn-columns {
 	box-sizing: border-box;
 }
 
-.wp-block-flexblocks-section *,
-.wp-block-flexblocks-columns * {
+.wpdsgn-section *,
+.wpdsgn-columns * {
 	box-sizing: border-box;
 }
 
-/* Ensure proper block alignment */
-.wp-block-flexblocks-section.alignfull,
-.wp-block-flexblocks-columns.alignfull {
-	width: 100vw;
-	max-width: 100vw;
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
+/* Section Block Global Styles */
+.wpdsgn-section {
+	position: relative;
+	display: flex;
+	width: 100%;
 }
 
-.wp-block-flexblocks-section.alignwide,
-.wp-block-flexblocks-columns.alignwide {
-	max-width: var(--wp--custom--layout--wide-size, 1200px);
-	margin-left: auto;
-	margin-right: auto;
+/* Columns Block Global Styles */
+.wpdsgn-columns {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
-/* Responsive images */
-.wp-block-flexblocks-section img,
-.wp-block-flexblocks-columns img {
-	max-width: 100%;
-	height: auto;
+.wpdsgn-columns > .wp-block-column {
+	flex: 1;
+	min-width: 0;
 }
 
-/* Print styles */
+/* Responsive Utilities */
+@media (max-width: 1024px) {
+	.wpdsgn-hide-tablet {
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.wpdsgn-hide-mobile {
+		display: none !important;
+	}
+	
+	/* Default mobile behavior */
+	.wpdsgn-columns {
+		flex-direction: column;
+	}
+	
+	.wpdsgn-columns > .wp-block-column {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 1025px) {
+	.wpdsgn-hide-desktop {
+		display: none !important;
+	}
+}
+
+/* Accessibility */
+.wpdsgn-section:focus,
+.wpdsgn-columns:focus {
+	outline: 2px solid #007cba;
+	outline-offset: 2px;
+}
+
+/* Print Styles */
 @media print {
-	.wp-block-flexblocks-section,
-	.wp-block-flexblocks-columns {
-		page-break-inside: avoid;
+	.wpdsgn-section,
+	.wpdsgn-columns {
+		break-inside: avoid;
+	}
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+	.wpdsgn-section,
+	.wpdsgn-columns {
+		border: 1px solid;
+	}
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+	.wpdsgn-section,
+	.wpdsgn-columns,
+	.wpdsgn-section *,
+	.wpdsgn-columns * {
+		transition: none !important;
+		animation: none !important;
 	}
 }
 

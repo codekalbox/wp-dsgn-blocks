@@ -1,0 +1,257 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpdsgn/section",
+	"title": "Section",
+	"category": "wpdsgn-blocks",
+	"description": "Advanced container with complete flexbox controls and responsive settings.",
+	"keywords": ["section", "container", "flex", "layout", "responsive"],
+	"textdomain": "wp-dsgn-blocks",
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"className": true,
+		"spacing": {
+			"margin": false,
+			"padding": false
+		}
+	},
+	"attributes": {
+		"uniqueId": {
+			"type": "string",
+			"default": ""
+		},
+		"contentWidth": {
+			"type": "string",
+			"default": "boxed"
+		},
+		"maxWidth": {
+			"type": "string",
+			"default": "1200px"
+		},
+		"minHeight": {
+			"type": "object",
+			"default": {
+				"desktop": "auto",
+				"tablet": "",
+				"mobile": ""
+			}
+		},
+		"htmlTag": {
+			"type": "string",
+			"default": "section"
+		},
+		"overflow": {
+			"type": "string",
+			"default": "visible"
+		},
+		"flexDirection": {
+			"type": "object",
+			"default": {
+				"desktop": "row",
+				"tablet": "",
+				"mobile": ""
+			}
+		},
+		"justifyContent": {
+			"type": "object",
+			"default": {
+				"desktop": "flex-start",
+				"tablet": "",
+				"mobile": ""
+			}
+		},
+		"alignItems": {
+			"type": "object",
+			"default": {
+				"desktop": "flex-start",
+				"tablet": "",
+				"mobile": ""
+			}
+		},
+		"flexWrap": {
+			"type": "object",
+			"default": {
+				"desktop": "nowrap",
+				"tablet": "",
+				"mobile": ""
+			}
+		},
+		"gap": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"row": "20px",
+					"column": "20px"
+				},
+				"tablet": {
+					"row": "",
+					"column": ""
+				},
+				"mobile": {
+					"row": "",
+					"column": ""
+				}
+			}
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "20px",
+					"right": "20px",
+					"bottom": "20px",
+					"left": "20px",
+					"linked": true
+				},
+				"tablet": {
+					"top": "",
+					"right": "",
+					"bottom": "",
+					"left": "",
+					"linked": true
+				},
+				"mobile": {
+					"top": "",
+					"right": "",
+					"bottom": "",
+					"left": "",
+					"linked": true
+				}
+			}
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"right": "0px",
+					"bottom": "0px",
+					"left": "0px",
+					"linked": true
+				},
+				"tablet": {
+					"top": "",
+					"right": "",
+					"bottom": "",
+					"left": "",
+					"linked": true
+				},
+				"mobile": {
+					"top": "",
+					"right": "",
+					"bottom": "",
+					"left": "",
+					"linked": true
+				}
+			}
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundOpacity": {
+			"type": "number",
+			"default": 1
+		},
+		"backgroundGradient": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundImage": {
+			"type": "object",
+			"default": {
+				"url": "",
+				"id": 0,
+				"position": "center center",
+				"size": "cover",
+				"repeat": "no-repeat",
+				"attachment": "scroll",
+				"opacity": 1
+			}
+		},
+		"backgroundOverlay": {
+			"type": "object",
+			"default": {
+				"color": "",
+				"opacity": 0.5,
+				"blendMode": "normal"
+			}
+		},
+		"border": {
+			"type": "object",
+			"default": {
+				"type": "none",
+				"width": {
+					"top": "0px",
+					"right": "0px",
+					"bottom": "0px",
+					"left": "0px",
+					"linked": true
+				},
+				"color": "#000000",
+				"radius": {
+					"topLeft": "0px",
+					"topRight": "0px",
+					"bottomRight": "0px",
+					"bottomLeft": "0px",
+					"linked": true
+				}
+			}
+		},
+		"boxShadow": {
+			"type": "array",
+			"default": []
+		},
+		"customClass": {
+			"type": "string",
+			"default": ""
+		},
+		"customId": {
+			"type": "string",
+			"default": ""
+		},
+		"zIndex": {
+			"type": "number",
+			"default": ""
+		},
+		"cssFilters": {
+			"type": "object",
+			"default": {
+				"blur": 0,
+				"brightness": 100,
+				"contrast": 100,
+				"saturation": 100
+			}
+		},
+		"transform": {
+			"type": "object",
+			"default": {
+				"rotate": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"translateX": "0px",
+				"translateY": "0px"
+			}
+		},
+		"transitionDuration": {
+			"type": "string",
+			"default": "0.3s"
+		},
+		"hideOnDevices": {
+			"type": "object",
+			"default": {
+				"desktop": false,
+				"tablet": false,
+				"mobile": false
+			}
+		}
+	},
+	"providesContext": {
+		"wpdsgn/parentSection": "uniqueId"
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
+
