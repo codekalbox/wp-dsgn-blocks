@@ -1,0 +1,71 @@
+/**
+ * Section Block - Frontend Styles
+ */
+
+.wpdsgn-section {
+	position: relative;
+	box-sizing: border-box;
+	
+	// Default display and flex properties
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	
+	// Default spacing
+	padding: 20px;
+	margin: 0;
+	
+	// Ensure child blocks don't overflow
+	> * {
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+	
+	// Handle nested blocks
+	.wp-block {
+		max-width: 100%;
+	}
+	
+	// Responsive behavior
+	@media (max-width: 768px) {
+		// Default mobile stacking
+		flex-direction: column;
+		
+		// Adjust padding for mobile
+		padding: 15px;
+	}
+}
+
+// Boxed content width
+.wpdsgn-section.wpdsgn-content-boxed {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Full width content
+.wpdsgn-section.wpdsgn-content-full {
+	width: 100%;
+	max-width: none;
+}
+
+// Background overlay support
+.wpdsgn-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 1;
+}
+
+// Ensure content is above overlay
+.wpdsgn-section > * {
+	position: relative;
+	z-index: 2;
+}
+

@@ -1,264 +1,259 @@
 /**
- * Generate inline styles for Section block.
- *
- * @param {Object} attributes Block attributes.
- * @return {Object} Inline styles object.
+ * Shared style utilities for WP DSGN Blocks
  */
-export function generateSectionStyles( attributes ) {
-	const {
-		contentWidth,
-		maxWidth,
-		minHeight,
-		minHeightValue,
-		flexDirection,
-		justifyContent,
-		alignItems,
-		flexWrap,
-		gap,
-		paddingTop,
-		paddingRight,
-		paddingBottom,
-		paddingLeft,
-		marginTop,
-		marginRight,
-		marginBottom,
-		marginLeft,
-		backgroundColor,
-		backgroundOpacity,
-		backgroundImage,
-		backgroundPosition,
-		backgroundSize,
-		backgroundRepeat,
-		backgroundGradient,
-		borderTopWidth,
-		borderRightWidth,
-		borderBottomWidth,
-		borderLeftWidth,
-		borderStyle,
-		borderColor,
-		borderTopLeftRadius,
-		borderTopRightRadius,
-		borderBottomRightRadius,
-		borderBottomLeftRadius,
-		boxShadowX,
-		boxShadowY,
-		boxShadowBlur,
-		boxShadowSpread,
-		boxShadowColor,
-		boxShadowEnabled,
-		zIndex,
-		overflow,
-	} = attributes;
 
-	const styles = {
-		display: 'flex',
-		flexDirection: flexDirection || 'row',
-		justifyContent: justifyContent || 'flex-start',
-		alignItems: alignItems || 'stretch',
-		flexWrap: flexWrap || 'nowrap',
+/**
+ * Convert hex color to rgba
+ * 
+ * @param {string} hex   Hex color code
+ * @param {number} alpha Alpha value (0-1)
+ * @return {string} RGBA color string
+ */
+export function hexToRgba( hex, alpha = 1 ) {
+	if ( ! hex ) return '';
+	
+	// Remove # if present
+	hex = hex.replace( '#', '' );
+	
+	// Parse hex values
+	const r = parseInt( hex.substring( 0, 2 ), 16 );
+	const g = parseInt( hex.substring( 2, 4 ), 16 );
+	const b = parseInt( hex.substring( 4, 6 ), 16 );
+	
+	return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+/**
+ * Generate responsive CSS for a property
+ * 
+ * @param {string} selector    CSS selector
+ * @param {string} property    CSS property name
+ * @param {Object} values      Responsive values object
+ * @param {Object} breakpoints Breakpoint values
+ * @return {string} Generated CSS
+ */
+export function generateResponsiveCSS( selector, property, values, breakpoints = {} ) {
+	if ( ! values || typeof values !== 'object' ) {
+		return '';
+	}
+	
+	const defaultBreakpoints = {
+		tablet: '1024px',
+		mobile: '768px'
 	};
-
-	// Content width
-	if ( contentWidth === 'boxed' && maxWidth ) {
-		styles.maxWidth = maxWidth;
-		styles.marginLeft = 'auto';
-		styles.marginRight = 'auto';
+	
+	const bp = { ...defaultBreakpoints, ...breakpoints };
+	let css = '';
+	
+	// Desktop (default)
+	if ( values.desktop ) {
+		css += `${selector} { ${property}: ${values.desktop}; }`;
 	}
-
-	// Min height
-	if ( minHeight === 'custom' && minHeightValue ) {
-		styles.minHeight = minHeightValue;
+	
+	// Tablet
+	if ( values.tablet ) {
+		css += `@media (max-width: ${bp.tablet}) {`;
+		css += `${selector} { ${property}: ${values.tablet}; }`;
+		css += `}`;
 	}
-
-	// Gap
-	if ( gap ) {
-		styles.gap = gap;
+	
+	// Mobile
+	if ( values.mobile ) {
+		css += `@media (max-width: ${bp.mobile}) {`;
+		css += `${selector} { ${property}: ${values.mobile}; }`;
+		css += `}`;
 	}
+	
+	return css;
+}
 
-	// Padding
-	if ( paddingTop ) styles.paddingTop = paddingTop;
-	if ( paddingRight ) styles.paddingRight = paddingRight;
-	if ( paddingBottom ) styles.paddingBottom = paddingBottom;
-	if ( paddingLeft ) styles.paddingLeft = paddingLeft;
-
-	// Margin (only if not boxed, as boxed uses auto margins)
-	if ( contentWidth !== 'boxed' ) {
-		if ( marginTop ) styles.marginTop = marginTop;
-		if ( marginRight ) styles.marginRight = marginRight;
-		if ( marginBottom ) styles.marginBottom = marginBottom;
-		if ( marginLeft ) styles.marginLeft = marginLeft;
-	} else {
-		if ( marginTop ) styles.marginTop = marginTop;
-		if ( marginBottom ) styles.marginBottom = marginBottom;
+/**
+ * Generate spacing CSS (padding/margin)
+ * 
+ * @param {Object} spacing Spacing object with top, right, bottom, left
+ * @return {string} CSS spacing value
+ */
+export function generateSpacingCSS( spacing ) {
+	if ( ! spacing || typeof spacing !== 'object' ) {
+		return '';
 	}
+	
+	const { top, right, bottom, left, linked } = spacing;
+	
+	if ( linked && top ) {
+		return top;
+	}
+	
+	return `${top || '0'} ${right || '0'} ${bottom || '0'} ${left || '0'}`;
+}
 
-	// Background color with opacity
-	if ( backgroundColor ) {
-		const opacity = backgroundOpacity !== undefined ? backgroundOpacity : 1;
-		// Convert hex to rgba if needed
-		if ( backgroundColor.startsWith( '#' ) ) {
-			const r = parseInt( backgroundColor.slice( 1, 3 ), 16 );
-			const g = parseInt( backgroundColor.slice( 3, 5 ), 16 );
-			const b = parseInt( backgroundColor.slice( 5, 7 ), 16 );
-			styles.backgroundColor = `rgba(${ r }, ${ g }, ${ b }, ${ opacity })`;
-		} else {
-			styles.backgroundColor = backgroundColor;
+/**
+ * Generate box shadow CSS
+ * 
+ * @param {Array} shadows Array of shadow objects
+ * @return {string} CSS box-shadow value
+ */
+export function generateBoxShadowCSS( shadows ) {
+	if ( ! Array.isArray( shadows ) || shadows.length === 0 ) {
+		return '';
+	}
+	
+	return shadows.map( shadow => {
+		const { x, y, blur, spread, color, inset } = shadow;
+		return `${inset ? 'inset ' : ''}${x || 0}px ${y || 0}px ${blur || 0}px ${spread || 0}px ${color || 'rgba(0,0,0,0.1)'}`;
+	} ).join( ', ' );
+}
+
+/**
+ * Generate border CSS
+ * 
+ * @param {Object} border Border object
+ * @return {Object} CSS border properties
+ */
+export function generateBorderCSS( border ) {
+	if ( ! border || typeof border !== 'object' ) {
+		return {};
+	}
+	
+	const css = {};
+	
+	// Border width and style
+	if ( border.type && border.type !== 'none' ) {
+		const { width, color, type } = border;
+		
+		if ( width && typeof width === 'object' ) {
+			const { top, right, bottom, left, linked } = width;
+			
+			if ( linked && top ) {
+				css.border = `${top} ${type} ${color || '#000000'}`;
+			} else {
+				if ( top ) css.borderTop = `${top} ${type} ${color || '#000000'}`;
+				if ( right ) css.borderRight = `${right} ${type} ${color || '#000000'}`;
+				if ( bottom ) css.borderBottom = `${bottom} ${type} ${color || '#000000'}`;
+				if ( left ) css.borderLeft = `${left} ${type} ${color || '#000000'}`;
+			}
 		}
 	}
-
-	// Background image
-	if ( backgroundImage?.url ) {
-		styles.backgroundImage = `url(${ backgroundImage.url })`;
-		styles.backgroundPosition = backgroundPosition || 'center center';
-		styles.backgroundSize = backgroundSize || 'cover';
-		styles.backgroundRepeat = backgroundRepeat || 'no-repeat';
-	}
-
-	// Background gradient
-	if ( backgroundGradient ) {
-		styles.backgroundImage = backgroundGradient;
-	}
-
-	// Border
-	if ( borderTopWidth ) {
-		styles.borderTopWidth = borderTopWidth;
-		styles.borderTopStyle = borderStyle || 'solid';
-	}
-	if ( borderRightWidth ) {
-		styles.borderRightWidth = borderRightWidth;
-		styles.borderRightStyle = borderStyle || 'solid';
-	}
-	if ( borderBottomWidth ) {
-		styles.borderBottomWidth = borderBottomWidth;
-		styles.borderBottomStyle = borderStyle || 'solid';
-	}
-	if ( borderLeftWidth ) {
-		styles.borderLeftWidth = borderLeftWidth;
-		styles.borderLeftStyle = borderStyle || 'solid';
-	}
-	if ( borderColor ) {
-		styles.borderColor = borderColor;
-	}
-
+	
 	// Border radius
-	if ( borderTopLeftRadius ) styles.borderTopLeftRadius = borderTopLeftRadius;
-	if ( borderTopRightRadius ) styles.borderTopRightRadius = borderTopRightRadius;
-	if ( borderBottomRightRadius ) styles.borderBottomRightRadius = borderBottomRightRadius;
-	if ( borderBottomLeftRadius ) styles.borderBottomLeftRadius = borderBottomLeftRadius;
-
-	// Box shadow
-	if ( boxShadowEnabled ) {
-		const x = boxShadowX || '0px';
-		const y = boxShadowY || '0px';
-		const blur = boxShadowBlur || '0px';
-		const spread = boxShadowSpread || '0px';
-		const color = boxShadowColor || 'rgba(0,0,0,0.1)';
-		styles.boxShadow = `${ x } ${ y } ${ blur } ${ spread } ${ color }`;
-	}
-
-	// Z-index
-	if ( zIndex ) {
-		styles.zIndex = zIndex;
-	}
-
-	// Overflow
-	if ( overflow && overflow !== 'visible' ) {
-		styles.overflow = overflow;
-	}
-
-	return styles;
-}
-
-/**
- * Generate inline styles for Columns block.
- *
- * @param {Object} attributes Block attributes.
- * @return {Object} Inline styles object.
- */
-export function generateColumnsStyles( attributes ) {
-	const {
-		verticalAlignment,
-		columnGap,
-		stackOnMobile,
-	} = attributes;
-
-	const styles = {
-		display: 'flex',
-		flexWrap: 'wrap',
-	};
-
-	// Vertical alignment
-	if ( verticalAlignment ) {
-		switch ( verticalAlignment ) {
-			case 'top':
-				styles.alignItems = 'flex-start';
-				break;
-			case 'center':
-				styles.alignItems = 'center';
-				break;
-			case 'bottom':
-				styles.alignItems = 'flex-end';
-				break;
-			case 'stretch':
-				styles.alignItems = 'stretch';
-				break;
-			default:
-				styles.alignItems = 'stretch';
+	if ( border.radius && typeof border.radius === 'object' ) {
+		const { topLeft, topRight, bottomRight, bottomLeft, linked } = border.radius;
+		
+		if ( linked && topLeft ) {
+			css.borderRadius = topLeft;
+		} else {
+			css.borderRadius = `${topLeft || '0'} ${topRight || '0'} ${bottomRight || '0'} ${bottomLeft || '0'}`;
 		}
 	}
-
-	// Column gap
-	if ( columnGap ) {
-		styles.gap = columnGap;
-	}
-
-	return styles;
+	
+	return css;
 }
 
 /**
- * Generate inline styles for individual Column.
- *
- * @param {Object} columnData Column data.
- * @param {number} totalColumns Total number of columns.
- * @return {Object} Inline styles object.
+ * Generate transform CSS
+ * 
+ * @param {Object} transform Transform object
+ * @return {string} CSS transform value
  */
-export function generateColumnStyles( columnData, totalColumns ) {
-	const {
-		width,
-		backgroundColor,
-		paddingTop,
-		paddingRight,
-		paddingBottom,
-		paddingLeft,
-	} = columnData || {};
+export function generateTransformCSS( transform ) {
+	if ( ! transform || typeof transform !== 'object' ) {
+		return '';
+	}
+	
+	const transforms = [];
+	
+	if ( transform.rotate !== undefined && transform.rotate !== 0 ) {
+		transforms.push( `rotate(${transform.rotate}deg)` );
+	}
+	
+	if ( transform.scaleX !== undefined && transform.scaleX !== 1 ) {
+		transforms.push( `scaleX(${transform.scaleX})` );
+	}
+	
+	if ( transform.scaleY !== undefined && transform.scaleY !== 1 ) {
+		transforms.push( `scaleY(${transform.scaleY})` );
+	}
+	
+	if ( transform.translateX !== undefined && transform.translateX !== '0px' ) {
+		transforms.push( `translateX(${transform.translateX})` );
+	}
+	
+	if ( transform.translateY !== undefined && transform.translateY !== '0px' ) {
+		transforms.push( `translateY(${transform.translateY})` );
+	}
+	
+	return transforms.length > 0 ? transforms.join( ' ' ) : '';
+}
 
-	const styles = {
-		flex: '1 1 0',
-		minWidth: 0,
+/**
+ * Generate filter CSS
+ * 
+ * @param {Object} filters Filter object
+ * @return {string} CSS filter value
+ */
+export function generateFilterCSS( filters ) {
+	if ( ! filters || typeof filters !== 'object' ) {
+		return '';
+	}
+	
+	const filterArray = [];
+	
+	if ( filters.blur !== undefined && filters.blur > 0 ) {
+		filterArray.push( `blur(${filters.blur}px)` );
+	}
+	
+	if ( filters.brightness !== undefined && filters.brightness !== 100 ) {
+		filterArray.push( `brightness(${filters.brightness}%)` );
+	}
+	
+	if ( filters.contrast !== undefined && filters.contrast !== 100 ) {
+		filterArray.push( `contrast(${filters.contrast}%)` );
+	}
+	
+	if ( filters.saturation !== undefined && filters.saturation !== 100 ) {
+		filterArray.push( `saturate(${filters.saturation}%)` );
+	}
+	
+	return filterArray.length > 0 ? filterArray.join( ' ' ) : '';
+}
+
+/**
+ * Debounce function for performance optimization
+ * 
+ * @param {Function} func  Function to debounce
+ * @param {number}   delay Delay in milliseconds
+ * @return {Function} Debounced function
+ */
+export function debounce( func, delay ) {
+	let timeoutId;
+	return function( ...args ) {
+		clearTimeout( timeoutId );
+		timeoutId = setTimeout( () => func.apply( this, args ), delay );
 	};
+}
 
-	// Custom width
-	if ( width ) {
-		styles.flex = `0 0 ${ width }`;
-		styles.maxWidth = width;
-	} else {
-		// Equal widths
-		const equalWidth = `${ 100 / totalColumns }%`;
-		styles.flex = `0 0 ${ equalWidth }`;
-		styles.maxWidth = equalWidth;
-	}
+/**
+ * Get breakpoint values
+ * 
+ * @return {Object} Breakpoint values
+ */
+export function getBreakpoints() {
+	return {
+		desktop: 1025,
+		tablet: 1024,
+		mobile: 768
+	};
+}
 
-	// Background color
-	if ( backgroundColor ) {
-		styles.backgroundColor = backgroundColor;
-	}
-
-	// Padding
-	if ( paddingTop ) styles.paddingTop = paddingTop;
-	if ( paddingRight ) styles.paddingRight = paddingRight;
-	if ( paddingBottom ) styles.paddingBottom = paddingBottom;
-	if ( paddingLeft ) styles.paddingLeft = paddingLeft;
-
-	return styles;
+/**
+ * Check if value is empty
+ * 
+ * @param {*} value Value to check
+ * @return {boolean} True if empty
+ */
+export function isEmpty( value ) {
+	return value === null || value === undefined || value === '' || 
+		   ( Array.isArray( value ) && value.length === 0 ) ||
+		   ( typeof value === 'object' && Object.keys( value ).length === 0 );
 }
 

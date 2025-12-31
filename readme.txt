@@ -1,6 +1,6 @@
-=== FlexBlocks Layout Builder ===
+=== WP DSGN Blocks ===
 Contributors: codekalbox
-Tags: gutenberg, blocks, layout, flexbox, columns
+Tags: gutenberg, blocks, layout, flexbox, responsive, columns, section
 Requires at least: 6.0
 Tested up to: 6.4
 Requires PHP: 7.4
@@ -8,111 +8,88 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Advanced Gutenberg blocks for flexible layout building with complete flexbox control.
+Professional Gutenberg blocks with advanced flexbox controls for modern layout building.
 
 == Description ==
 
-FlexBlocks Layout Builder adds powerful, flexible layout blocks to the WordPress block editor (Gutenberg). Create sophisticated page layouts with complete control over flexbox properties, spacing, backgrounds, and responsive behavior.
+WP DSGN Blocks adds powerful, flexible layout blocks to the WordPress block editor (Gutenberg). Create sophisticated page layouts with complete control over flexbox properties, spacing, backgrounds, and responsive behavior.
 
 = Features =
 
 **Section Block**
-* Complete flexbox control (direction, justify, align, wrap, gap)
-* Full spacing controls (padding and margin with individual sides)
-* Background options (color with opacity, images, gradients)
-* Border and shadow controls
-* Minimum height and content width settings
-* Custom HTML tag selection
-* Advanced options (CSS classes, ID, z-index, overflow)
+* Complete flexbox control (direction, justify-content, align-items, flex-wrap, gap)
+* Flexible spacing with individual padding and margin controls
+* Rich backgrounds (color with opacity, images, CSS gradients)
+* Border controls and box shadow effects
+* Layout options (content width, minimum height, HTML tag selection)
+* Advanced options (custom CSS classes, ID, z-index, overflow control)
+* Responsive settings for desktop, tablet, and mobile
 
 **Columns Block**
-* Flexible column layouts (1-6 columns)
-* Preset layout options (50/50, 33/33/33, 25/75, etc.)
-* Custom width control per column
-* Vertical alignment options
-* Individual column styling (background, padding)
-* Responsive controls with mobile stacking
-* Column gap customization
+* Flexible layouts (1-6 columns with preset layouts)
+* Custom column widths using percentages or pixels
+* Vertical and horizontal alignment controls
+* Individual column styling (background colors, padding)
+* Responsive design with mobile stacking options
+* Customizable gap between columns and rows
+
+= Key Benefits =
+
+* **Professional UI/UX**: Tabbed Inspector Controls with intuitive organization
+* **Responsive Design**: Device-specific controls for desktop, tablet, and mobile
+* **Live Preview**: Real-time updates in the block editor
+* **Performance Optimized**: Efficient CSS generation and minimal overhead
+* **Accessibility Ready**: Keyboard navigation and screen reader support
+* **Developer Friendly**: Clean code following WordPress standards
 
 = Use Cases =
 
-* Create hero sections with flexible content alignment
-* Build responsive multi-column layouts
-* Design feature sections with custom backgrounds
-* Construct complex page layouts without code
-* Build landing pages with precise spacing control
-
-= Technical Features =
-
-* Modern WordPress block development with @wordpress/scripts
-* Mobile-first responsive design
-* Full Site Editing (FSE) compatible
-* Clean, semantic HTML output
-* Optimized CSS generation
-* Translation ready (i18n)
+* Hero sections with centered content
+* Multi-column layouts for content organization
+* Feature sections with custom backgrounds
+* Call-to-action boxes with specific spacing
+* Grid layouts for services or portfolios
+* Responsive layouts that adapt to all devices
 
 == Installation ==
 
-= From WordPress Dashboard =
-
-1. Navigate to Plugins → Add New
-2. Search for "FlexBlocks Layout Builder"
-3. Click "Install Now" and then "Activate"
-4. Blocks will appear in the block inserter under "FlexBlocks" category
-
-= Manual Installation =
-
-1. Download the plugin ZIP file
-2. Navigate to Plugins → Add New → Upload Plugin
-3. Select the downloaded ZIP file and click "Install Now"
-4. Click "Activate Plugin"
-
-= From Source =
-
-1. Clone or download the repository
-2. Run `npm install` to install dependencies
-3. Run `npm run build` to build the assets
-4. Upload to your WordPress plugins directory
-5. Activate through the WordPress plugins screen
+1. Upload the plugin files to the `/wp-content/plugins/wp-dsgn-blocks` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. The blocks will appear in the block inserter under the "WP DSGN Blocks" category.
 
 == Frequently Asked Questions ==
 
-= What WordPress version is required? =
+= Can I use these blocks with my theme? =
 
-WordPress 6.0 or higher is required to use this plugin.
+Yes! WP DSGN Blocks works with any WordPress theme that supports the block editor (Gutenberg). It's also fully compatible with Full Site Editing themes.
 
-= Does this work with my theme? =
+= Will this slow down my site? =
 
-Yes! FlexBlocks works with any WordPress theme that supports the block editor (Gutenberg). It's also fully compatible with Full Site Editing themes.
+No. WP DSGN Blocks is built with performance in mind, using optimized code and efficient CSS generation. Styles are only loaded when blocks are used on a page.
 
-= Can I use these blocks with other block plugins? =
+= Can I nest Section blocks inside other Section blocks? =
 
-Absolutely! FlexBlocks blocks work seamlessly alongside core WordPress blocks and other block plugins.
+Yes! You can nest Section blocks and combine them with Columns blocks to create complex layouts.
 
 = Are the blocks responsive? =
 
 Yes, all blocks are built with mobile-first responsive design. The Columns block includes specific responsive controls for mobile stacking and breakpoint management.
 
-= Can I nest blocks inside the Section block? =
+= Can I export and reuse my layouts? =
 
-Yes! The Section block accepts any WordPress blocks as children, including the Columns block and other nested Sections.
+Yes! You can create reusable block patterns using WordPress's pattern system, allowing you to save and reuse entire layouts.
 
-= Will this slow down my site? =
+= Do the blocks work with Full Site Editing? =
 
-No. FlexBlocks is built with performance in mind, using optimized code and efficient CSS generation. Styles are only loaded when blocks are used on a page.
-
-= Is the plugin translation ready? =
-
-Yes, FlexBlocks is fully translation ready and includes proper internationalization functions throughout.
+Absolutely! WP DSGN Blocks is fully compatible with Full Site Editing themes and the Site Editor.
 
 == Screenshots ==
 
-1. Section Block with flexbox controls in the sidebar
-2. Columns Block with multiple column layouts
-3. Background and border controls panel
-4. Responsive controls for mobile layouts
-5. Example hero section built with Section block
-6. Complex multi-column layout example
+1. Section Block with flexbox controls in the Inspector
+2. Columns Block with preset layout options
+3. Responsive controls for different devices
+4. Background settings with tabbed interface
+5. Live preview in the block editor
 
 == Changelog ==
 
@@ -120,6 +97,7 @@ Yes, FlexBlocks is fully translation ready and includes proper internationalizat
 * Initial release
 * Added Section Block with complete flexbox controls
 * Added Columns Block with responsive features
+* Professional tabbed Inspector Controls
 * Background, border, and spacing controls
 * Mobile-first responsive design
 * Full Site Editing compatibility
@@ -127,40 +105,35 @@ Yes, FlexBlocks is fully translation ready and includes proper internationalizat
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release of FlexBlocks Layout Builder.
+Initial release of WP DSGN Blocks. Start building professional layouts with advanced Gutenberg blocks.
 
-== Development ==
+== Developer Information ==
 
-= Building from Source =
+= Requirements =
+* WordPress 6.0 or higher
+* PHP 7.4 or higher
+* Modern browser with CSS Grid and Flexbox support
 
-```bash
-# Install dependencies
-npm install
-
-# Start development mode (with watch)
-npm run start
-
-# Build for production
-npm run build
-
-# Lint JavaScript
-npm run lint:js
-
-# Lint CSS
-npm run lint:css
-```
+= Technical Details =
+* Built with @wordpress/scripts for modern development workflow
+* Uses @wordpress/block-editor components for native integration
+* Follows WordPress PHP and JavaScript coding standards
+* Internationalization ready (i18n)
+* Accessibility compliant (WCAG 2.1)
 
 = Contributing =
+WP DSGN Blocks is open source. Contribute on [GitHub](https://github.com/codekalbox/wp-dsgn-blocks).
 
-Contributions are welcome! Please visit our GitHub repository to submit issues or pull requests.
+= Support =
+For support, feature requests, or bug reports, please visit our [GitHub repository](https://github.com/codekalbox/wp-dsgn-blocks/issues).
+
+== Privacy Policy ==
+
+WP DSGN Blocks does not collect, store, or transmit any personal data. All block settings and content are stored locally in your WordPress database.
 
 == Credits ==
 
-* Built with @wordpress/scripts and @wordpress/block-editor
-* Developed with modern WordPress block development best practices
-* Inspired by popular page builders but focused on native Gutenberg integration
-
-== Support ==
-
-For support, feature requests, or bug reports, please visit our GitHub repository or contact us through the WordPress.org support forum.
+* Built with [@wordpress/scripts](https://www.npmjs.com/package/@wordpress/scripts)
+* Developed using [@wordpress/block-editor](https://www.npmjs.com/package/@wordpress/block-editor)
+* Follows WordPress block development best practices
 

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpdsgn/columns",
+  "title": "Columns",
+  "category": "wpdsgn-blocks",
+  "description": "Responsive multi-column layout with advanced controls and mobile stacking.",
+  "keywords": [
+    "columns",
+    "layout",
+    "grid",
+    "responsive",
+    "flex"
+  ],
+  "textdomain": "wp-dsgn-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "margin": false,
+      "padding": false
+    }
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "columnCount": {
+      "type": "number",
+      "default": 2
+    },
+    "presetLayout": {
+      "type": "string",
+      "default": "equal"
+    },
+    "customWidths": {
+      "type": "array",
+      "default": []
+    },
+    "verticalAlignment": {
+      "type": "object",
+      "default": {
+        "desktop": "stretch",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "horizontalAlignment": {
+      "type": "object",
+      "default": {
+        "desktop": "flex-start",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "columnGap": {
+      "type": "object",
+      "default": {
+        "desktop": "20px",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "rowGap": {
+      "type": "object",
+      "default": {
+        "desktop": "20px",
+        "tablet": "",
+        "mobile": ""
+      }
+    },
+    "stackOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "stackBreakpoint": {
+      "type": "object",
+      "default": {
+        "tablet": "1024px",
+        "mobile": "768px"
+      }
+    },
+    "stackDirection": {
+      "type": "string",
+      "default": "normal"
+    },
+    "equalHeight": {
+      "type": "boolean",
+      "default": false
+    },
+    "reverseColumns": {
+      "type": "object",
+      "default": {
+        "desktop": false,
+        "tablet": false,
+        "mobile": false
+      }
+    },
+    "columnSettings": {
+      "type": "array",
+      "default": []
+    },
+    "customClass": {
+      "type": "string",
+      "default": ""
+    },
+    "customId": {
+      "type": "string",
+      "default": ""
+    },
+    "hideOnDevices": {
+      "type": "object",
+      "default": {
+        "desktop": false,
+        "tablet": false,
+        "mobile": false
+      }
+    }
+  },
+  "providesContext": {
+    "wpdsgn/parentColumns": "uniqueId",
+    "wpdsgn/columnCount": "columnCount"
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
