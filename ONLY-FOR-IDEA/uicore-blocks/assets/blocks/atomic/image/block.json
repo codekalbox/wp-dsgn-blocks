@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/image",
+  "version": "0.1.0",
+  "title": "Image",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Display images with masks and flexible customization settings.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

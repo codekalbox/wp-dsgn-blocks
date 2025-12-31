@@ -1,0 +1,14 @@
+{
+  "apiVersion": 3,
+  "name": "uicore/divider",
+  "title": "Divider",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Insert a customizable divider to separate sections.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

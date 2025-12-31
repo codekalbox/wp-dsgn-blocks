@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-tabs-nav",
+  "version": "0.1.0",
+  "title": "Tabs Nav",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Add the navigation wrapper used in the tabs element.",
+  "parent": [
+    "uicore/a-tabs"
+  ],
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "inserter": false
+  },
+  "allowedBlocks": [
+    "uicore/a-tabs-nav-item"
+  ],
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-grid-icon-card",
+  "title": "Adv. Icon Card Grid",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Create a grid of customizable Icon Cards with flexible sync options.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

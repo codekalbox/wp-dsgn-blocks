@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-tabs-content",
+  "version": "0.1.0",
+  "title": "Tabs Content",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Add the content block used within a tab element",
+  "parent": [
+    "uicore/a-tabs"
+  ],
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "inserter": false
+  },
+  "allowedBlocks": [
+    "uicore/a-tabs-content-item"
+  ],
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

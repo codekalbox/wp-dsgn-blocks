@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-accordion",
+  "title": "Adv. Accordion",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Insert a flexible accordion with optional sync settings.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "allowedBlocks": [
+    "uicore/accordion-item"
+  ],
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/accordion-item",
+  "version": "0.1.0",
+  "title": "Item",
+  "category": "uicore-basic",
+  "description": "Add the item wrapper used within an accordion block.",
+  "parent": [
+    "uicore/a-accordion"
+  ],
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "allowedBlocks": [
+    "uicore/accordion-item-title",
+    "uicore/accordion-item-content"
+  ],
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

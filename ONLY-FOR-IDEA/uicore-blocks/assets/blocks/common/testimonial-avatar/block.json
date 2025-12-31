@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/testimonial-avatar",
+  "version": "0.1.0",
+  "title": "Testimonial Avatar",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add the avatar element used in a testimonial card.",
+  "ancestor": [
+    "uicore/a-testimonial-card",
+    "uicore/a-card"
+  ],
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

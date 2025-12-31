@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/carousel-gallery",
+  "title": "Gallery Carousel",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Create an image carousel with synchronized styling and advanced customization.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

@@ -1,0 +1,35 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: admin@nectarblocks.com\n"
+"Last-Translator: NectarBlocks <admin@nectarblocks.com>\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: nectar-blocks-importer-exporter\n"
+"X-Generator: WP-CLI 2.10.0\n"
+
+#. Plugin Name of the plugin
+#: nectar-blocks-importer-exporter.php
+msgid "Nectarblocks Importer/Exporter"
+msgstr "Importateur/Exportateur de Nectarblocks"
+
+#. Description of the plugin
+#: nectar-blocks-importer-exporter.php
+msgid "A WordPress Importer Exporter to support the Nectarblocks plugin."
+msgstr ""
+"Un importateur exportateur WordPress pour prendre en charge le plugin "
+"Nectarblocks."
+
+#. Author of the plugin
+#: nectar-blocks-importer-exporter.php
+msgid "NectarBlocks"
+msgstr "NectarBlocks"
+
+#. Author URI of the plugin
+#: nectar-blocks-importer-exporter.php
+msgid "https://nectarblocks.com/"
+msgstr "https://nectarblocks.com/"

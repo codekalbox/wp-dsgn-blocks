@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/testimonial-card",
+  "title": "Testimonial Card",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Showcase testimonials with flexible layouts and settings.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

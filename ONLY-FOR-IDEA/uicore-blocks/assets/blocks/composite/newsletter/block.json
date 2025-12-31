@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/newsletter",
+  "title": "Newsletter",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Insert a newsletter signup form with various service integrations.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

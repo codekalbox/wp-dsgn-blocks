@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/toggle-icon",
+  "version": "0.1.0",
+  "title": "ToggleIcon",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add the toggle icon used to expand or collapse accordion items.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "parent": [
+    "uicore/a-accordion-item-title"
+  ],
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

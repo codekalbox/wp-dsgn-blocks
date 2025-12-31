@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-icon-text",
+  "version": "0.1.0",
+  "title": "Adv. Icon Text",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Add a content block with an icon and custom text.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/social-icons",
+  "title": "Social Icons",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "This block will neve be used as asn actual block, we just use the edit and save components to render the item from composite blocks",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "parent": [
+    "uicore/fake"
+  ],
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 3,
+  "name": "blockons/image-gallery",
+  "title": "Advanced Image Gallery",
+  "textdomain": "blockons",
+  "icon": "format-gallery",
+  "category": "blockons-category",
+  "keywords": [
+    "image",
+    "gallery",
+    "advanced",
+    "blockons"
+  ],
+  "attributes": {
+    "isPremium": {
+      "type": "boolean",
+      "default": false
+    },
+    "uniqueId": {
+      "type": "string"
+    },
+    "galleryImages": {
+      "type": "array",
+      "default": []
+    },
+    "columns": {
+      "type": "number",
+      "default": 4
+    },
+    "gridGap": {
+      "type": "number",
+      "default": 10
+    },
+    "layout": {
+      "type": "string",
+      "default": "grid"
+    },
+    "imageProportion": {
+      "type": "string",
+      "default": "actual"
+    },
+    "imageHover": {
+      "type": "string",
+      "default": "none"
+    },
+    "imageCaption": {
+      "type": "string",
+      "default": "none"
+    },
+    "captionOnHover": {
+      "type": "boolean",
+      "default": false
+    },
+    "captionAnimation": {
+      "type": "string",
+      "default": "fade"
+    },
+    "imageBgColor": {
+      "type": "string",
+      "default": "#f0f0f0"
+    },
+    "captionBgColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "captionOpacity": {
+      "type": "number",
+      "default": 0.75
+    },
+    "captionFontColor": {
+      "type": "string",
+      "default": "#FFF"
+    },
+    "captionFontSize": {
+      "type": "number",
+      "default": 13
+    },
+    "popupEnable": {
+      "type": "boolean",
+      "default": false
+    },
+    "popupIcon": {
+      "type": "string",
+      "default": "one"
+    },
+    "popupIconPos": {
+      "type": "string",
+      "default": "topleft"
+    },
+    "popupIconColor": {
+      "type": "string",
+      "default": "dark"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewScript": [
+    "blockons-image-gallery"
+  ],
+  "style": [
+    "file:./style-index.css",
+    "blockons-fontawesome",
+    "blockons-sweetalert-style"
+  ]
+}

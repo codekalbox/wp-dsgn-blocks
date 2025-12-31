@@ -1,0 +1,46 @@
+{% set blockDataAttrs = '' %}
+{% if bgAnimation %}
+  {% set blockDataAttrs = ' data-nectar-bg-scroll-animation="' ~ bgAnimation|raw ~ '"'%}
+{% endif %}
+
+{% set videoType = 'video/mp4' %}
+{% if post.portfolio_video|lower ends with '.webm' %}
+  {% set videoType = 'video/webm' %}
+{% elseif post.portfolio_video|lower ends with '.ogg' %}
+  {% set videoType = 'video/ogg' %}
+{% endif %}
+
+{% macro renderVideo(post, videoType, isEditor) %}
+  {% if post.portfolio_video is not empty %}
+    <video class="nectar-blocks-lazy-video nectar-blocks-post-grid__item__featured-media__item" autoPlay playsInline muted loop>
+      {% if isEditor %}
+        <source src="{{ post.portfolio_video|e }}" type="{{ videoType }}">
+      {% else %}
+        <source data-nectar-lazy-src="{{ post.portfolio_video|e }}" type="{{ videoType }}">
+      {% endif %}
+    </video>
+  {% endif %}
+{% endmacro %}
+
+<div class="{{ blockClassName }}__item__featured-media"{{ blockDataAttrs|raw }}>
+  {% set wrapperTag = '' %}
+  {% set wrapperAttrs = '' %}
+
+  {% if settings.linkType is not same as('wrap-all') %}
+    {% set wrapperTag = 'a' %}
+    {% set wrapperAttrs = 'href="' ~ post.permalink|e ~ '" aria-label="' ~ post.title|e ~ '" class="' ~ blockClassName ~ '__item__featured-media__inner" ' ~ bgAnimationActiveViewports|raw %}
+  {% elseif bgAnimation %}
+    {% set wrapperTag = 'div' %}
+    {% set wrapperAttrs = 'class="' ~ blockClassName ~ '__item__featured-media__inner"' %}
+  {% endif %}
+
+  {% if wrapperTag %}
+    <{{ wrapperTag }} {{ wrapperAttrs|raw }}>
+      {{ post.featured_image|raw }}
+      {{ _self.renderVideo(post, videoType, isEditor) }}
+    </{{ wrapperTag }}>
+  {% else %}
+    {{ post.featured_image|raw }}
+    {{ _self.renderVideo(post, videoType, isEditor) }}
+  {% endif %}
+</div>

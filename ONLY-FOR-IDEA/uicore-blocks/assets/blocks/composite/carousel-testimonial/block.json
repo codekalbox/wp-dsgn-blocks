@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/carousel-testimonial",
+  "title": "Testimonial Card Carousel",
+  "category": "uicore-composite",
+  "description": "Create a synchronized carousel of Testimonial Cards.",
+  "icon": "uicore-block-icon",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

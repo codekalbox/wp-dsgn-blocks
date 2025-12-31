@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/query-loop-pagination",
+  "title": "Query Loop Pagination",
+  "category": "uicore-dynamic",
+  "icon": "uicore-block-icon",
+  "description": "Query loop pagination",
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "ancestor": [
+    "uicore/query-loop"
+  ],
+  "usesContext": [
+    "queryId",
+    "query"
+  ],
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "textdomain": "uicore-blocks"
+}

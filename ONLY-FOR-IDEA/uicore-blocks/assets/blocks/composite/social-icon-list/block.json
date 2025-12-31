@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/social-icon-list",
+  "title": "Social Icons List",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Add a synchronized block of social media icons.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/query-loop-no-results",
+  "title": "Query Loop No Results",
+  "category": "uicore-dynamic",
+  "icon": "uicore-block-icon",
+  "description": "Query loop no results",
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "ancestor": [
+    "uicore/query-loop"
+  ],
+  "usesContext": [
+    "queryId",
+    "query"
+  ],
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "textdomain": "uicore-blocks"
+}

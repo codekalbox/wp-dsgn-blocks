@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/text-list",
+  "title": "Text List",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Create a simple text list with synchronized styling.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

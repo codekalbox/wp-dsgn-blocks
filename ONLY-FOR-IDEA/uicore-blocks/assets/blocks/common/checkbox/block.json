@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/checkbox",
+  "title": "Checkbox Input",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add an acceptance checkbox used within forms.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "ancestor": [
+    "uicore/a-form"
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "textdomain": "uicore-blocks"
+}

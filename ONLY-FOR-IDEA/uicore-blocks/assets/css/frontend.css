@@ -1,0 +1,81 @@
+[class*='wp-block-uicore-'] {
+	position: relative;
+	box-sizing: border-box;
+	/* width: 100%; //break the icons. why we need it? */
+	grid-column: var(--ui-bl-span-desktop);
+	grid-row: var(--ui-bl-span-row-desktop);
+}
+
+@media (min-width: 1025px) {
+	.uicore-bl-styles .uicore-bl-desktop-hidden {
+		display: none !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.uicore-bl-styles .uicore-bl-tablet-hidden {
+		display: none !important;
+	}
+
+	[class*='wp-block-uicore-'] {
+		grid-column: var(--ui-bl-span-tablet, var(--ui-bl-span-desktop));
+		grid-row: var(--ui-bl-span-row-tablet, var(--ui-bl-span-row-desktop));
+	}
+}
+
+@media (max-width: 767px) {
+	.uicore-bl-styles .uicore-bl-mobile-hidden {
+		display: none !important;
+	}
+
+	[class*='wp-block-uicore-'] {
+		grid-column: var(--ui-bl-span-mobile);
+		grid-row: var(--ui-bl-span-row-mobile);
+	}
+}
+
+.wp-block-uicore-post-grid {
+	width: 100%;
+}
+
+.uicore-bl-img:not(.swiper-slide) {
+	/* width: fit-content; experimenting with max for better natural width + behavior with other images as siblings */
+	max-width: fit-content;
+	display: block;
+}
+
+.wp-block-uicore-card {
+	overflow: hidden;
+}
+
+[class*='wp-block-uicore-'] img:not(.uicore-bl-inline-image) {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.uicore-bl-content img {
+	width: auto;
+	display: inline-block !important;
+}
+
+.uicore-bl-content {
+	margin: 0;
+}
+
+.uicore-bl-content sub {
+	font-size: clamp(12px, 35%, 50%);
+}
+
+.uicore-bl-content sup {
+	font-size: clamp(12px, 35%, 50%);
+}
+
+.uicore-bl-odometer span {
+	word-break: initial;
+}
+
+.uicore-bl-el {
+	width: 100%;
+}

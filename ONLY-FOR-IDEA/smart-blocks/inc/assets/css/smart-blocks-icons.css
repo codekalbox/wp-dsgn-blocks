@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'smart-blocks-icons';
+  src:
+    url('fonts/smart-blocks-icons/smart-blocks-icons.ttf') format('truetype'),
+    url('fonts/smart-blocks-icons/smart-blocks-icons.woff') format('woff'),
+    url('fonts/smart-blocks-icons/smart-blocks-icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="sbi-"],
+[class*=" sbi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'smart-blocks-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sbi-align-center-h:before {
+  content: "\e900";
+}
+
+.sbi-align-center-v:before {
+  content: "\e901";
+}
+
+.sbi-align-end-h:before {
+  content: "\e902";
+}
+
+.sbi-align-end-v:before {
+  content: "\e903";
+}
+
+.sbi-align-start-h:before {
+  content: "\e904";
+}
+
+.sbi-align-start-v:before {
+  content: "\e905";
+}
+
+.sbi-align-stretch-h:before {
+  content: "\e906";
+}
+
+.sbi-align-stretch-v:before {
+  content: "\e907";
+}
+
+.sbi-justify-center-h:before {
+  content: "\e912";
+}
+
+.sbi-justify-center-v:before {
+  content: "\e913";
+}
+
+.sbi-justify-end-h:before {
+  content: "\e914";
+}
+
+.sbi-justify-end-v:before {
+  content: "\e915";
+}
+
+.sbi-justify-space-around-h:before {
+  content: "\e916";
+}
+
+.sbi-justify-space-around-v:before {
+  content: "\e917";
+}
+
+.sbi-justify-space-between-h:before {
+  content: "\e918";
+}
+
+.sbi-justify-space-between-v:before {
+  content: "\e919";
+}
+
+.sbi-justify-space-evenly-h:before {
+  content: "\e91a";
+}
+
+.sbi-justify-space-evenly-v:before {
+  content: "\e91b";
+}
+
+.sbi-justify-start-h:before {
+  content: "\e91c";
+}
+
+.sbi-justify-start-v:before {
+  content: "\e91d";
+}
+
+.sbi-arrow-down:before {
+  content: "\e908";
+}
+
+.sbi-arrow-left:before {
+  content: "\e909";
+}
+
+.sbi-arrow-right:before {
+  content: "\e90a";
+}
+
+.sbi-arrow-up:before {
+  content: "\e90b";
+}
+
+.sbi-barcode:before {
+  content: "\e90c";
+}
+
+.sbi-h-align-center:before {
+  content: "\e90e";
+}
+
+.sbi-h-align-stretch:before {
+  content: "\e911";
+}
+
+.sbi-v-align-middle:before {
+  content: "\e925";
+}
+
+.sbi-v-align-stretch:before {
+  content: "\e926";
+}
+
+.sbi-h-align-left:before {
+  content: "\e90f";
+}
+
+.sbi-h-align-right:before {
+  content: "\e910";
+}
+
+.sbi-v-align-bottom:before {
+  content: "\e924";
+}
+
+.sbi-v-align-top:before {
+  content: "\e927";
+}
+
+.sbi-order-end:before {
+  content: "\e91e";
+}
+
+.sbi-grow:before {
+  content: "\e90d";
+}
+
+.sbi-order-start:before {
+  content: "\e91f";
+}
+
+.sbi-text-align-justify:before {
+  content: "\e921";
+}
+
+.sbi-text-align-left:before {
+  content: "\e922";
+}
+
+.sbi-text-align-center:before {
+  content: "\e920";
+}
+
+.sbi-text-align-right:before {
+  content: "\e923";
+}
+
+.sbi-wrap:before {
+  content: "\e928";
+}

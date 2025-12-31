@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/rating-stars",
+  "version": "0.1.0",
+  "title": "Rating Stars",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add a rating block with customizable icons and settings.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

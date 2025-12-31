@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-grid-icon-text",
+  "title": "Adv. Icon Text Grid",
+  "category": "uicore-advanced",
+  "description": "Add a grid of Icon Text blocks with with flexible sync options.",
+  "icon": "uicore-block-icon",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/icon-list",
+  "title": "Icon List",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Create a synchronized list combining icons and text.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

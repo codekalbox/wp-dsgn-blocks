@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/icon-card",
+  "title": "Icon Card",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Add a block with icon, text, subtext, badge, and button.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

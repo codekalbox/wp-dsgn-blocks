@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-tabs",
+  "title": "Advanced Tabs",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Add a tabbed content block with flexible sync settings.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "allowedBlocks": [
+    "uicore/a-tabs-content",
+    "uicore/a-tabs-nav"
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "textdomain": "uicore-blocks"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/query-loop-grid-item",
+  "title": "Loop Item",
+  "category": "uicore-dynamic",
+  "icon": "uicore-block-icon",
+  "description": "Create an query loop card.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "ancestor": [
+    "uicore/query-loop-grid"
+  ],
+  "usesContext": [
+    "postType",
+    "postId",
+    "classList",
+    "itemIndex"
+  ],
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/input",
+  "title": "Input",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add the input element used within a form field.",
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "inserter": false
+  },
+  "ancestor": [
+    "uicore/form-field"
+  ],
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

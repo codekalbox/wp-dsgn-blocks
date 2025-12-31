@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/query-loop-pagination-button",
+  "title": "Pagination Button",
+  "category": "uicore-dynamic",
+  "icon": "uicore-block-icon",
+  "description": "Query loop pagination button",
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "ancestor": [
+    "uicore/query-loop-pagination"
+  ],
+  "usesContext": [
+    "queryId",
+    "query",
+    "enhancedPagination"
+  ],
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "textdomain": "uicore-blocks"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/card-icon",
+  "version": "0.1.0",
+  "title": "Card Icon",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "ancestor": [
+    "uicore/a-icon-card"
+  ],
+  "description": "Add the icon element used within a card block.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

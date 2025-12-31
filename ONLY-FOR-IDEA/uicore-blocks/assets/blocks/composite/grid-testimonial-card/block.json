@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/grid-testimonial-card",
+  "title": "Testimonial Card Grid",
+  "category": "uicore-composite",
+  "description": "Create a synchronized grid of Testimonial Cards.",
+  "icon": "uicore-block-icon",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

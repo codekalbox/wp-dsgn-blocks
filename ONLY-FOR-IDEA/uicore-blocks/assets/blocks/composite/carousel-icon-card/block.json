@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/carousel-icon-card",
+  "title": "Icon Card Carousel",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Create a synchronized carousel of Icon Cards.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

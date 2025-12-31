@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/grid-icon-card",
+  "title": "Icon Card Grid",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Create a synchronized grid of Icon Cards.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

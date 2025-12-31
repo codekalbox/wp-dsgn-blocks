@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/accordion",
+  "title": "Accordion",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Add an accordion block with synchronized options and flexible content.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

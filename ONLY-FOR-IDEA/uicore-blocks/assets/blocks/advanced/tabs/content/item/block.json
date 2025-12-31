@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-tabs-content-item",
+  "version": "0.1.0",
+  "title": "SYNC::Tab Panel",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Add the content item used within the tabs element.",
+  "parent": [
+    "uicore/a-tabs-content"
+  ],
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "inserter": false
+  },
+  "ancestor": [
+    "uicore/a-tabs-content"
+  ],
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

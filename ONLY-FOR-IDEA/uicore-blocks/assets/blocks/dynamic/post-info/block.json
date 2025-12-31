@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "uicore/post-info",
+  "title": "Post Info",
+  "category": "uicore-dynamic",
+  "icon": "uicore-block-icon",
+  "description": "Insert a heading with highlight effects, inline images, and rich customization options.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "usesContext": [
+    "queryId",
+    "postType",
+    "postId",
+    "classList",
+    "itemIndex"
+  ],
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/grid-team-card",
+  "title": "Team Card Grid",
+  "category": "uicore-composite",
+  "description": "Create a synchronized grid of Team Cards.",
+  "icon": "uicore-block-icon",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

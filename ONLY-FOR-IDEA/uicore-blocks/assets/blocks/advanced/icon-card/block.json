@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-icon-card",
+  "title": "Adv. Icon Card",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Create an Icon Card with custom content.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

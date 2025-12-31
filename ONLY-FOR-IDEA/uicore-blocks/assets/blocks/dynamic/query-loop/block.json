@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/query-loop",
+  "title": "Query Loop",
+  "category": "uicore-dynamic",
+  "icon": "uicore-block-icon",
+  "description": "Create a flexible grid of posts, pages, or custom content.",
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "interactivity": true
+  },
+  "usesContext": [
+    "templateSlug"
+  ],
+  "providesContext": {
+    "queryId": "queryId",
+    "query": "query",
+    "enhancedPagination": "enhancedPagination"
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

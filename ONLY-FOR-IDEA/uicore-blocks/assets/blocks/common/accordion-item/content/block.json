@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/accordion-item-content",
+  "version": "0.1.0",
+  "title": "SYNC::Content",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add the content block used within an accordion item.",
+  "parent": [
+    "uicore/accordion-item"
+  ],
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "inserter": false
+  },
+  "ancestor": [
+    "uicore/accordion-item"
+  ],
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

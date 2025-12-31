@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/post-grid",
+  "title": "Post Grid",
+  "category": "uicore-dynamic",
+  "icon": "uicore-block-icon",
+  "description": "Create a flexible grid of posts, pages, or custom content.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "style": [
+    "uicore-blog-st"
+  ],
+  "render": "file:./render.php",
+  "textdomain": "uicore-blocks",
+  "attributes": {
+    "isWoo": {
+      "type": "boolean",
+      "default": false
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "queryPost": {
+      "type": "string"
+    },
+    "queryPostsPerPage": {
+      "type": "string"
+    },
+    "queryOffSet": {
+      "type": "string"
+    },
+    "gridType": {
+      "type": "string"
+    },
+    "colNumber": {
+      "type": "string"
+    },
+    "ratio": {
+      "type": "string"
+    },
+    "showAuthor": {
+      "type": "string"
+    },
+    "showDate": {
+      "type": "string"
+    },
+    "showCategory": {
+      "type": "string"
+    },
+    "showExcerpt": {
+      "type": "string"
+    },
+    "itemStyle": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "number"
+    }
+  }
+}

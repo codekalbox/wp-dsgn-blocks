@@ -1,0 +1,1218 @@
+# Copyright (C) 2025 HashThemes
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart Blocks - WordPress Gutenberg Blocks 2.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/smart-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-10T15:35:11+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: smart-blocks\n"
+
+#. Plugin Name of the plugin
+#: smart-blocks.php
+msgid "Smart Blocks - WordPress Gutenberg Blocks"
+msgstr ""
+
+#. Description of the plugin
+#: smart-blocks.php
+msgid "Collection of advanced blocks to be used with WordPress Gutenberg Pagebuilder"
+msgstr ""
+
+#. Author of the plugin
+#: smart-blocks.php
+msgid "HashThemes"
+msgstr ""
+
+#. Author URI of the plugin
+#: smart-blocks.php
+msgid "http://hashthemes.com"
+msgstr ""
+
+#: inc/admin-settings-page.php:27
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin-settings-page.php:36
+msgid "Blocks"
+msgstr ""
+
+#: inc/admin-settings-page.php:40
+#: smart-blocks.php:492
+msgid "Settings"
+msgstr ""
+
+#: inc/admin-settings-page.php:44
+msgid "About"
+msgstr ""
+
+#: inc/admin-settings-page.php:66
+msgid "Enable All"
+msgstr ""
+
+#: inc/admin-settings-page.php:69
+msgid "Disable All"
+msgstr ""
+
+#: inc/admin-settings-page.php:83
+#: inc/admin-settings-page.php:178
+msgid "Save"
+msgstr ""
+
+#: inc/admin-settings-page.php:91
+msgid "Description"
+msgstr ""
+
+#: inc/admin-settings-page.php:92
+msgid "Smart Blocks is an all in one block pack extension for Gutenberg page builder. It provides creative blocks to provide an outstanding look to your Gutenberg based WordPress website. The blocks are multi concept and contain amazing features to make your website more effective by placing the spectacular blocks and enhance the engagement rate."
+msgstr ""
+
+#: inc/admin-settings-page.php:94
+msgid "Blocks Available in the Extension:"
+msgstr ""
+
+#: inc/admin-settings-page.php:107
+msgid "More Coming"
+msgstr ""
+
+#: inc/admin-settings-page.php:109
+msgid "Support:"
+msgstr ""
+
+#: inc/admin-settings-page.php:110
+msgid "If you have any issues while using our plugin, feel free to contact us for support. Our support team will be more than happy to help you resolve your issue. You can chat with us or email us at our website"
+msgstr ""
+
+#: inc/admin-settings-page.php:110
+msgid "here"
+msgstr ""
+
+#: inc/admin-settings-page.php:122
+msgid "Block Styles"
+msgstr ""
+
+#: inc/admin-settings-page.php:123
+msgid "Block Settings"
+msgstr ""
+
+#: inc/admin-settings-page.php:145
+msgid "Default Columns Width (px)"
+msgstr ""
+
+#: inc/admin-settings-page.php:155
+msgid "Load Google Fonts Locally"
+msgstr ""
+
+#: inc/admin-settings-page.php:161
+msgid "It is required to load the Google Fonts locally in order to comply with GDPR. However, if your website is not required to comply with GDPR then you can check this field off. Loading the Fonts locally with lots of different Google fonts can decrease the speed of the website slightly."
+msgstr ""
+
+#: inc/helper-functions.php:54
+#: inc/helper-functions.php:176
+#: inc/helper-functions.php:177
+msgid "ago"
+msgstr ""
+
+#: inc/helper-functions.php:343
+msgid "Place content side by side inside a Columns block"
+msgstr ""
+
+#: inc/helper-functions.php:344
+msgid "Group blocks together for layout or styling"
+msgstr ""
+
+#: inc/helper-functions.php:345
+#: inc/helper-functions.php:346
+#: inc/helper-functions.php:347
+#: inc/helper-functions.php:348
+#: inc/helper-functions.php:349
+#: inc/helper-functions.php:350
+#: inc/helper-functions.php:351
+#: inc/helper-functions.php:352
+#: inc/helper-functions.php:353
+#: inc/helper-functions.php:354
+#: inc/helper-functions.php:355
+#: inc/helper-functions.php:356
+#: inc/helper-functions.php:357
+#: inc/helper-functions.php:358
+#: inc/helper-functions.php:359
+#: inc/helper-functions.php:360
+#: inc/helper-functions.php:361
+#: inc/helper-functions.php:362
+#: inc/helper-functions.php:363
+#: inc/helper-functions.php:364
+#: inc/helper-functions.php:365
+#: inc/helper-functions.php:366
+msgid "Displays News Posts"
+msgstr ""
+
+#: inc/template-library.php:28
+msgid "URL of the JSON file."
+msgstr ""
+
+#: inc/template-library.php:33
+msgid "Load for Block Preview."
+msgstr ""
+
+#: inc/template-library.php:81
+msgid "File doesn't exist"
+msgstr ""
+
+#: smart-blocks.php:249
+msgid "SB Block Modules"
+msgstr ""
+
+#: smart-blocks.php:253
+msgid "SB Magazine Modules"
+msgstr ""
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: smart-blocks.php:339
+msgid "Great to see that you have been using Smart Blocks - WordPress Gutenberg Blocks for some time. We hope you love it, and we would really appreciate it if you would %1$sgive us a 5 stars rating%2$s and spread your words to the world."
+msgstr ""
+
+#: smart-blocks.php:343
+msgid "Yes, of course"
+msgstr ""
+
+#: smart-blocks.php:345
+msgid "I have already rated"
+msgstr ""
+
+#: smart-blocks.php:368
+msgid "Dismiss this notice."
+msgstr ""
+
+#: smart-blocks.php:430
+msgid "Smart Blocks Full Width"
+msgstr ""
+
+#: smart-blocks.php:461
+#: inc/assets/js/editor-sidebar.js:1
+msgid "Smart Blocks Settings"
+msgstr ""
+
+#: smart-blocks.php:461
+msgid "Smart Blocks"
+msgstr ""
+
+#: build/index.js:1
+msgid "Desktop"
+msgstr ""
+
+#: build/index.js:1
+msgid "Tablet"
+msgstr ""
+
+#: build/index.js:1
+msgid "Phone"
+msgstr ""
+
+#: build/index.js:1
+msgid "Single Row"
+msgstr ""
+
+#: build/index.js:1
+msgid "Equal"
+msgstr ""
+
+#: build/index.js:1
+msgid "1:2"
+msgstr ""
+
+#: build/index.js:1
+msgid "2:1"
+msgstr ""
+
+#: build/index.js:1
+msgid "Collapsed Rows"
+msgstr ""
+
+#: build/index.js:1
+msgid "1:1:2"
+msgstr ""
+
+#: build/index.js:1
+msgid "2:1:1"
+msgstr ""
+
+#: build/index.js:1
+msgid "1:2:1"
+msgstr ""
+
+#: build/index.js:1
+msgid "1:3:1"
+msgstr ""
+
+#: build/index.js:1
+msgid "Two Column Grid"
+msgstr ""
+
+#: build/index.js:1
+msgid "Three Column Grid"
+msgstr ""
+
+#: build/index.js:1
+msgid "Clear"
+msgstr ""
+
+#: build/index.js:1
+msgid "Remove Image"
+msgstr ""
+
+#: build/index.js:1
+msgid "Attachment"
+msgstr ""
+
+#: build/index.js:1
+msgid "Scroll"
+msgstr ""
+
+#: build/index.js:1
+msgid "Fixed"
+msgstr ""
+
+#: build/index.js:1
+msgid "Repeat"
+msgstr ""
+
+#: build/index.js:1
+msgid "No Repeat"
+msgstr ""
+
+#: build/index.js:1
+msgid "Repeat X"
+msgstr ""
+
+#: build/index.js:1
+msgid "Repeat Y"
+msgstr ""
+
+#: build/index.js:1
+msgid "Size"
+msgstr ""
+
+#: build/index.js:1
+msgid "Auto"
+msgstr ""
+
+#: build/index.js:1
+msgid "Cover"
+msgstr ""
+
+#: build/index.js:1
+msgid "Contain"
+msgstr ""
+
+#: build/index.js:1
+msgid "Overlay Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Background Image"
+msgstr ""
+
+#: build/index.js:1
+msgid "Box Shadow"
+msgstr ""
+
+#: build/index.js:1
+msgid "X"
+msgstr ""
+
+#: build/index.js:1
+msgid "Y"
+msgstr ""
+
+#: build/index.js:1
+msgid "Blur"
+msgstr ""
+
+#: build/index.js:1
+msgid "Spread"
+msgstr ""
+
+#: build/index.js:1
+msgid "Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Inset"
+msgstr ""
+
+#: build/index.js:1
+msgid "Solid"
+msgstr ""
+
+#: build/index.js:1
+msgid "Dotted"
+msgstr ""
+
+#: build/index.js:1
+msgid "Dashed"
+msgstr ""
+
+#: build/index.js:1
+msgid "Double"
+msgstr ""
+
+#: build/index.js:1
+msgid "Border"
+msgstr ""
+
+#: build/index.js:1
+msgid "Layout"
+msgstr ""
+
+#: build/index.js:1
+msgid "Style"
+msgstr ""
+
+#: build/index.js:1
+msgid "Advanced"
+msgstr ""
+
+#: build/index.js:1
+msgid "Columns & Layout"
+msgstr ""
+
+#: build/index.js:1
+msgid "Columns"
+msgstr ""
+
+#: build/index.js:1
+msgid "Content Width"
+msgstr ""
+
+#: build/index.js:1
+msgid "Full Width"
+msgstr ""
+
+#: build/index.js:1
+msgid "Boxed"
+msgstr ""
+
+#: build/index.js:1
+msgid "Width"
+msgstr ""
+
+#: build/index.js:1
+msgid "Min Height"
+msgstr ""
+
+#: build/index.js:1
+msgid "Column Align"
+msgstr ""
+
+#: build/index.js:1
+msgid "Flex Start"
+msgstr ""
+
+#: build/index.js:1
+msgid "Center"
+msgstr ""
+
+#: build/index.js:1
+msgid "Flex End"
+msgstr ""
+
+#: build/index.js:1
+msgid "Stretch"
+msgstr ""
+
+#: build/index.js:1
+msgid "Text Align"
+msgstr ""
+
+#: build/index.js:1
+msgid "Left"
+msgstr ""
+
+#: build/index.js:1
+msgid "Right"
+msgstr ""
+
+#: build/index.js:1
+msgid "Gaps"
+msgstr ""
+
+#: build/index.js:1
+msgid "Spacing"
+msgstr ""
+
+#: build/index.js:1
+msgid "Margin"
+msgstr ""
+
+#: build/index.js:1
+msgid "Padding"
+msgstr ""
+
+#: build/index.js:1
+msgid "Normal"
+msgstr ""
+
+#: build/index.js:1
+msgid "Border Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Border Width"
+msgstr ""
+
+#: build/index.js:1
+msgid "Border Radius"
+msgstr ""
+
+#: build/index.js:1
+msgid "Hover"
+msgstr ""
+
+#: build/index.js:1
+msgid "Background"
+msgstr ""
+
+#: build/index.js:1
+msgid "Image/Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Gradient"
+msgstr ""
+
+#: build/index.js:1
+msgid "Background Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Background Gradient"
+msgstr ""
+
+#: build/index.js:1
+msgid "Responsive"
+msgstr ""
+
+#: build/index.js:1
+msgid "Hide this section in Desktop devices?"
+msgstr ""
+
+#: build/index.js:1
+msgid "Hide this section in Tablet devices?"
+msgstr ""
+
+#: build/index.js:1
+msgid "Hide this section in Mobile devices?"
+msgstr ""
+
+#: build/index.js:1
+msgid "Reverse Columns in Tablet devices?"
+msgstr ""
+
+#: build/index.js:1
+msgid "Reverse Columns in Mobile devices?"
+msgstr ""
+
+#: build/index.js:1
+msgid "Section Settings"
+msgstr ""
+
+#: build/index.js:1
+msgid "HTML Tag"
+msgstr ""
+
+#: build/index.js:1
+msgid "Default (div)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Section"
+msgstr ""
+
+#: build/index.js:1
+msgid "Select a variation to start with"
+msgstr ""
+
+#: build/index.js:1
+msgid "Single"
+msgstr ""
+
+#: build/index.js:1
+msgid "Display content in multiple columns, with blocks added to each column."
+msgstr ""
+
+#: build/index.js:1
+msgid "Column Width"
+msgstr ""
+
+#: build/index.js:1
+msgid "Align Self"
+msgstr ""
+
+#: build/index.js:1
+msgid "Start"
+msgstr ""
+
+#: build/index.js:1
+msgid "Column"
+msgstr ""
+
+#: build/index.js:1
+msgid "A single column within a columns block."
+msgstr ""
+
+#: build/index.js:1
+msgid "Sticky Options"
+msgstr ""
+
+#: build/index.js:1
+msgid "Enable Sticky"
+msgstr ""
+
+#: build/index.js:1
+msgid "Sticky Offset"
+msgstr ""
+
+#: build/index.js:1
+msgid "Container Should be inside column for sticky"
+msgstr ""
+
+#: build/index.js:1
+msgid "Flexible Content Options"
+msgstr ""
+
+#: build/index.js:1
+msgid "Set Width"
+msgstr ""
+
+#: build/index.js:1
+msgid "Container Width"
+msgstr ""
+
+#: build/index.js:1
+msgid "Flex"
+msgstr ""
+
+#: build/index.js:1
+msgid "Grid"
+msgstr ""
+
+#: build/index.js:1
+msgid "Direction"
+msgstr ""
+
+#: build/index.js:1
+msgid "Bottom"
+msgstr ""
+
+#: build/index.js:1
+msgid "Top"
+msgstr ""
+
+#: build/index.js:1
+msgid "Container Wrap"
+msgstr ""
+
+#: build/index.js:1
+msgid "No Wrap"
+msgstr ""
+
+#: build/index.js:1
+msgid "Wrap"
+msgstr ""
+
+#: build/index.js:1
+msgid "Column Number"
+msgstr ""
+
+#: build/index.js:1
+msgid "Align Items"
+msgstr ""
+
+#: build/index.js:1
+msgid "Justify Content"
+msgstr ""
+
+#: build/index.js:1
+msgid "Space Between"
+msgstr ""
+
+#: build/index.js:1
+msgid "Space Around"
+msgstr ""
+
+#: build/index.js:1
+msgid "Space Evenly"
+msgstr ""
+
+#: build/index.js:1
+msgid "Justify Items"
+msgstr ""
+
+#: build/index.js:1
+msgid "Link URL"
+msgstr ""
+
+#: build/index.js:1
+msgid "The contents inside the container should not have any anchort link inorder to work properly."
+msgstr ""
+
+#: build/index.js:1
+msgid "Container"
+msgstr ""
+
+#: build/index.js:1
+msgid "Display container wrapper for elements"
+msgstr ""
+
+#: build/index.js:1
+msgid "Typography"
+msgstr ""
+
+#: build/index.js:1
+msgid "Font Family"
+msgstr ""
+
+#: build/index.js:1
+msgid "Weight/Style"
+msgstr ""
+
+#: build/index.js:1
+msgid "Text Transform"
+msgstr ""
+
+#: build/index.js:1
+msgid "Text Decoration"
+msgstr ""
+
+#: build/index.js:1
+msgid "Font Size"
+msgstr ""
+
+#: build/index.js:1
+msgid "Letter Spacing"
+msgstr ""
+
+#: build/index.js:1
+msgid "Line Height"
+msgstr ""
+
+#: build/index.js:1
+msgid "Content Filter"
+msgstr ""
+
+#: build/index.js:1
+msgid "Source"
+msgstr ""
+
+#: build/index.js:1
+msgid "Exclude Posts"
+msgstr ""
+
+#: build/index.js:1
+msgid "Order By"
+msgstr ""
+
+#: build/index.js:1
+msgid "Date"
+msgstr ""
+
+#: build/index.js:1
+msgid "Last Modified Date"
+msgstr ""
+
+#: build/index.js:1
+msgid "Rand"
+msgstr ""
+
+#: build/index.js:1
+msgid "Comment Count"
+msgstr ""
+
+#: build/index.js:1
+msgid "Title"
+msgstr ""
+
+#: build/index.js:1
+msgid "Show Post Author"
+msgstr ""
+
+#: build/index.js:1
+msgid "Order"
+msgstr ""
+
+#: build/index.js:1
+msgid "Descending"
+msgstr ""
+
+#: build/index.js:1
+msgid "Ascending"
+msgstr ""
+
+#: build/index.js:1
+msgid "Offset"
+msgstr ""
+
+#: build/index.js:1
+msgid "No of Posts"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 1"
+msgstr ""
+
+#: build/index.js:1
+msgid "Smart Blocks News Modules"
+msgstr ""
+
+#: build/index.js:1
+msgid "Header"
+msgstr ""
+
+#: build/index.js:1
+msgid "Style 1"
+msgstr ""
+
+#: build/index.js:1
+msgid "Style 2"
+msgstr ""
+
+#: build/index.js:1
+msgid "Style 3"
+msgstr ""
+
+#: build/index.js:1
+msgid "Style 4"
+msgstr ""
+
+#: build/index.js:1
+msgid "Featured Block"
+msgstr ""
+
+#: build/index.js:1
+msgid "Image Size"
+msgstr ""
+
+#: build/index.js:1
+msgid "Image Height (%)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Excerpt Length"
+msgstr ""
+
+#: build/index.js:1
+msgid "Show Post Date"
+msgstr ""
+
+#: build/index.js:1
+msgid "Show Post Comments"
+msgstr ""
+
+#: build/index.js:1
+msgid "Show Post Category"
+msgstr ""
+
+#: build/index.js:1
+msgid "Side Block"
+msgstr ""
+
+#: build/index.js:1
+msgid "Additional Settings"
+msgstr ""
+
+#: build/index.js:1
+msgid "Image Border Radius(px)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Date Format"
+msgstr ""
+
+#: build/index.js:1
+msgid "Relative Format (Ago)"
+msgstr ""
+
+#: build/index.js:1
+msgid "WordPress Default Format"
+msgstr ""
+
+#: build/index.js:1
+msgid "Custom Format"
+msgstr ""
+
+#: build/index.js:1
+msgid "Custom Date Format"
+msgstr ""
+
+#: build/index.js:1
+msgid "Header Title"
+msgstr ""
+
+#: build/index.js:1
+msgid "Short Border Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Long Border Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Category"
+msgstr ""
+
+#: build/index.js:1
+msgid "Text Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Title Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Title Color(Hover)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Featured"
+msgstr ""
+
+#: build/index.js:1
+msgid "Side Post"
+msgstr ""
+
+#: build/index.js:1
+msgid "Excerpt"
+msgstr ""
+
+#: build/index.js:1
+msgid "Metas"
+msgstr ""
+
+#: build/index.js:1
+msgid "Heading..."
+msgstr ""
+
+#: build/index.js:1
+msgid "(No title)"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 2"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 3"
+msgstr ""
+
+#: build/index.js:1
+msgid "Featured Post Title Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Side Post Title Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Side Post Title Color(Hover)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Featured Post"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 4"
+msgstr ""
+
+#: build/index.js:1
+msgid "Top Block"
+msgstr ""
+
+#: build/index.js:1
+msgid "Bottom Block"
+msgstr ""
+
+#: build/index.js:1
+msgid "Top Post"
+msgstr ""
+
+#: build/index.js:1
+msgid "Bottom Post"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 5"
+msgstr ""
+
+#: build/index.js:1
+msgid "Listing Block"
+msgstr ""
+
+#: build/index.js:1
+msgid "Listing Post"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 6"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 7"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 8"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 9"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 10"
+msgstr ""
+
+#: build/index.js:1
+msgid "Image Width (px)"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 11"
+msgstr ""
+
+#: build/index.js:1
+msgid "Post Block"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 12"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 13"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 14"
+msgstr ""
+
+#: build/index.js:1
+msgid "No of Columns"
+msgstr ""
+
+#: build/index.js:1
+msgid "News Module 15"
+msgstr ""
+
+#: build/index.js:1
+msgid "Tile Module 1"
+msgstr ""
+
+#: build/index.js:1
+msgid "Large Image Size"
+msgstr ""
+
+#: build/index.js:1
+msgid "Small Image Size"
+msgstr ""
+
+#: build/index.js:1
+msgid "Module Height(px)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Tile Module 2"
+msgstr ""
+
+#: build/index.js:1
+msgid "Tile Module 3"
+msgstr ""
+
+#: build/index.js:1
+msgid "Carousel Module"
+msgstr ""
+
+#: build/index.js:1
+msgid "No of Posts to Show"
+msgstr ""
+
+#: build/index.js:1
+msgid "Carousel Settings"
+msgstr ""
+
+#: build/index.js:1
+msgid "Autoplay"
+msgstr ""
+
+#: build/index.js:1
+msgid "Pause Duration"
+msgstr ""
+
+#: build/index.js:1
+msgid "No of Slides"
+msgstr ""
+
+#: build/index.js:1
+msgid "Spacing Between Slides"
+msgstr ""
+
+#: build/index.js:1
+msgid "Stage Padding"
+msgstr ""
+
+#: build/index.js:1
+msgid "Nav Arrow"
+msgstr ""
+
+#: build/index.js:1
+msgid "Nav Dots"
+msgstr ""
+
+#: build/index.js:1
+msgid "Navigation"
+msgstr ""
+
+#: build/index.js:1
+msgid "Icon Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Dots Color"
+msgstr ""
+
+#: build/index.js:1
+msgid "Background Color (Hover)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Icon Color (Hover)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Dots Color (Active)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Single News 1"
+msgstr ""
+
+#: build/index.js:1
+msgid "Select Filter"
+msgstr ""
+
+#: build/index.js:1
+msgid "By Post Title"
+msgstr ""
+
+#: build/index.js:1
+msgid "By Categories"
+msgstr ""
+
+#: build/index.js:1
+msgid "By Tags"
+msgstr ""
+
+#: build/index.js:1
+msgid "Select Post"
+msgstr ""
+
+#: build/index.js:1
+msgid "Categories"
+msgstr ""
+
+#: build/index.js:1
+msgid "Tags"
+msgstr ""
+
+#: build/index.js:1
+msgid "Post Meta"
+msgstr ""
+
+#: build/index.js:1
+msgid "Post Author"
+msgstr ""
+
+#: build/index.js:1
+msgid "Post Date"
+msgstr ""
+
+#: build/index.js:1
+msgid "Post Comments"
+msgstr ""
+
+#: build/index.js:1
+msgid "Post Excerpt"
+msgstr ""
+
+#: build/index.js:1
+msgid "Excerpt Length (in Letters)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Image Settings"
+msgstr ""
+
+#: build/index.js:1
+msgid "Content Alignment"
+msgstr ""
+
+#: build/index.js:1
+msgid "Content Padding"
+msgstr ""
+
+#: build/index.js:1
+msgid "Content Margin"
+msgstr ""
+
+#: build/index.js:1
+msgid "Single News 2"
+msgstr ""
+
+#: build/index.js:1
+msgid "Ticker Module"
+msgstr ""
+
+#: build/index.js:1
+msgid "Ticker Block"
+msgstr ""
+
+#: build/index.js:1
+msgid "Ticker Pause Duration"
+msgstr ""
+
+#: build/index.js:1
+msgid "Text Color (Hover)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Background Color(Hover)"
+msgstr ""
+
+#: build/index.js:1
+msgid "Text Color(Hover)"
+msgstr ""
+
+#: inc/assets/js/editor-sidebar.js:1
+msgid "Editor Width"
+msgstr ""
+
+#: inc/assets/js/editor-sidebar.js:1
+msgid "Default"
+msgstr ""
+
+#: inc/assets/js/editor-sidebar.js:1
+msgid "Narrow"
+msgstr ""
+
+#: inc/assets/js/editor-sidebar.js:1
+msgid "Large"
+msgstr ""
+
+#: inc/assets/js/editor-sidebar.js:1
+msgid "Full"
+msgstr ""

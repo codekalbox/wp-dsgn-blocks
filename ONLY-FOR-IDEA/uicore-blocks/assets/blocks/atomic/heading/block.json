@@ -1,0 +1,14 @@
+{
+  "apiVersion": 3,
+  "name": "uicore/heading",
+  "title": "Heading",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Insert a heading with highlight effects, inline images, and rich customization options.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

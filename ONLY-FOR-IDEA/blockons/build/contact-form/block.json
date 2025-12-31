@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 3,
+  "name": "blockons/contact-form",
+  "title": "Contact Form",
+  "category": "blockons-category",
+  "textdomain": "blockons",
+  "keywords": [
+    "contact",
+    "forms",
+    "email",
+    "blockons"
+  ],
+  "icon": "email",
+  "description": "Add a customizable form to your website",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "isPremium": {
+      "type": "boolean",
+      "default": false
+    },
+    "formWidth": {
+      "type": "string",
+      "default": "400px"
+    },
+    "alignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "align": {
+      "type": "string",
+      "default": "left"
+    },
+    "formName": {
+      "type": "string",
+      "default": "New Website Form"
+    },
+    "emailTo": {
+      "type": "string",
+      "default": ""
+    },
+    "emailSubject": {
+      "type": "string",
+      "default": "New Contact Form Submission"
+    },
+    "fromEmail": {
+      "type": "string",
+      "default": ""
+    },
+    "fromName": {
+      "type": "string",
+      "default": ""
+    },
+    "ccEmails": {
+      "type": "string",
+      "default": ""
+    },
+    "bccEmails": {
+      "type": "string",
+      "default": ""
+    },
+    "includeMetadata": {
+      "type": "boolean",
+      "default": true
+    },
+    "submitButtonText": {
+      "type": "string",
+      "default": "Send Message"
+    },
+    "successMessage": {
+      "type": "string",
+      "default": "Thank you for your message. We'll get back to you soon!"
+    },
+    "errorMessage": {
+      "type": "string",
+      "default": "There was an error sending your message. Please try again."
+    },
+    "columnSpacing": {
+      "type": "number",
+      "default": 4
+    },
+    "rowSpacing": {
+      "type": "number",
+      "default": 12
+    },
+    "textSize": {
+      "type": "number",
+      "default": 15
+    },
+    "textSpacing": {
+      "type": "number",
+      "default": 4
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#333"
+    },
+    "showLabels": {
+      "type": "boolean",
+      "default": true
+    },
+    "inputSize": {
+      "type": "number",
+      "default": 15
+    },
+    "inputPadHoriz": {
+      "type": "number",
+      "default": 15
+    },
+    "inputPadVert": {
+      "type": "number",
+      "default": 8
+    },
+    "inputBgColor": {
+      "type": "string",
+      "default": "#f9f9f9"
+    },
+    "inputTextColor": {
+      "type": "string",
+      "default": "#333"
+    },
+    "inputBorder": {
+      "type": "boolean",
+      "default": true
+    },
+    "inputBorderColor": {
+      "type": "string",
+      "default": "#dbdbdb"
+    },
+    "inputBorderRadius": {
+      "type": "number",
+      "default": 4
+    },
+    "buttonColor": {
+      "type": "string",
+      "default": "#31a2eb"
+    },
+    "buttonFontColor": {
+      "type": "string",
+      "default": "#FFF"
+    },
+    "buttonSpacing": {
+      "type": "number",
+      "default": 12
+    },
+    "errorPosition": {
+      "type": "string",
+      "default": "below"
+    },
+    "availableShortcodes": {
+      "type": "array",
+      "default": [
+        {
+          "code": "form_name",
+          "label": "Form Name",
+          "type": "system"
+        },
+        {
+          "code": "submission_date",
+          "label": "Submission Date",
+          "type": "system"
+        },
+        {
+          "code": "submission_time",
+          "label": "Submission Time",
+          "type": "system"
+        },
+        {
+          "code": "page_url",
+          "label": "Page URL",
+          "type": "system"
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewScript": [
+    "blockons-flatpickr-script",
+    "blockons-form-handler"
+  ],
+  "viewStyle": "blockons-flatpickr-style",
+  "style": "file:./style-index.css"
+}

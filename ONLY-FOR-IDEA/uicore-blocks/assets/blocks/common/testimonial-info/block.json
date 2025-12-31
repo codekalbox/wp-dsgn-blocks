@@ -1,0 +1,18 @@
+{
+  "apiVersion": 3,
+  "name": "uicore/testimonial-info",
+  "title": "Testimonial Info",
+  "ancestor": [
+    "uicore/a-testimonial-card",
+    "uicore/a-card"
+  ],
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add the author info block used in a testimonial card.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

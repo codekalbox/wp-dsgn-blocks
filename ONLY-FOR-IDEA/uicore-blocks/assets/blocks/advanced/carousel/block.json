@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-carousel",
+  "title": "Carousel",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "A custom block with a carousel that contains different blocks.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

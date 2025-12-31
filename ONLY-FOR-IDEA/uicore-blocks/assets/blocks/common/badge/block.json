@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/badge",
+  "title": "Badge",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add a label element used within a card block.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "ancestor": [
+    "uicore/a-icon-card",
+    "uicore/a-testimonial-card",
+    "uicore/a-card"
+  ],
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

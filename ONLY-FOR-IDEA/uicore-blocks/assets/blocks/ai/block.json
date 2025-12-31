@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/ai",
+  "title": "AI Block",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Generate content using AI.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "textdomain": "uicore-blocks"
+}

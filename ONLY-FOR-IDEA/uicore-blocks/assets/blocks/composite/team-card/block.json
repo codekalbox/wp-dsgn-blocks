@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/team-card",
+  "title": "Team Card",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Showcase team members with bio details and social links.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

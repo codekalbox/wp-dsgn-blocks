@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/gallery",
+  "title": "Gallery",
+  "category": "uicore-composite",
+  "icon": "uicore-block-icon",
+  "description": "Build an image gallery with lightbox functionality and optional titles.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "textdomain": "uicore-blocks"
+}

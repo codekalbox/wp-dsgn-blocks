@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/icon",
+  "version": "0.1.0",
+  "title": "Icon",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Insert customizable SVG icons from a library of 6000+.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

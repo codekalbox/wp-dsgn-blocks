@@ -1,0 +1,14 @@
+{
+  "apiVersion": 3,
+  "name": "uicore/paragraph",
+  "title": "Paragraph",
+  "category": "uicore-basic",
+  "icon": "uicore-block-icon",
+  "description": "Add a customizable text block with multiple formatting features.",
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}

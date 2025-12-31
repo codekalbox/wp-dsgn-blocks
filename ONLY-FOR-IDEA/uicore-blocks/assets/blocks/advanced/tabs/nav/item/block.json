@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "uicore/a-tabs-nav-item",
+  "version": "0.1.0",
+  "title": "SYNC::Tab Nav Item",
+  "category": "uicore-advanced",
+  "icon": "uicore-block-icon",
+  "description": "Add an individual navigation item used within the tabs element.",
+  "parent": [
+    "uicore/a-tabs-nav"
+  ],
+  "example": {},
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "ancestor": [
+    "uicore/a-tabs-nav"
+  ],
+  "textdomain": "uicore-blocks",
+  "editorScript": "file:./index.js"
+}
