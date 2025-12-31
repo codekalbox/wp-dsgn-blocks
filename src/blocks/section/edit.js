@@ -5,14 +5,11 @@ import { __ } from '@wordpress/i18n';
 import { 
 	useBlockProps, 
 	InnerBlocks,
-	InspectorControls,
-	BlockControls
+	InspectorControls
 } from '@wordpress/block-editor';
 import { 
 	PanelBody,
-	TabPanel,
 	SelectControl,
-	ToggleControl,
 	TextControl,
 	RangeControl,
 	ButtonGroup,
@@ -20,10 +17,8 @@ import {
 	__experimentalUnitControl as UnitControl,
 	__experimentalBoxControl as BoxControl,
 	ColorPicker,
-	GradientPicker,
 	MediaUpload,
-	MediaUploadCheck,
-	__experimentalBorderControl as BorderControl
+	MediaUploadCheck
 } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { useEffect } from '@wordpress/element';

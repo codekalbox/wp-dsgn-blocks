@@ -46,27 +46,69 @@
 	}
 }
 
-// Clean Inspector Controls styling
-.components-panel__body {
-	.components-base-control {
-		margin-bottom: 16px;
-		
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-	
-	.components-button-group {
-		.components-button {
-			font-size: 12px;
-			padding: 6px 12px;
+// Inspector Controls styling - properly scoped
+.block-editor-inspector-controls {
+	.components-panel__body {
+		.components-base-control {
+			margin-bottom: 16px;
 			
-			&.is-pressed {
-				background: #007cba;
-				color: white;
-				border-color: #007cba;
+			&:last-child {
+				margin-bottom: 0;
 			}
+		}
+		
+		.components-button-group {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px;
+			
+			.components-button {
+				font-size: 12px;
+				padding: 6px 12px;
+				min-height: 32px;
+				border: 1px solid #ddd;
+				background: #fff;
+				
+				&.is-pressed {
+					background: #007cba;
+					color: white;
+					border-color: #007cba;
+				}
+				
+				&:hover:not(.is-pressed) {
+					background: #f0f0f0;
+					border-color: #999;
+				}
+			}
+		}
+		
+		// Fix spacing for specific controls
+		.components-unit-control {
+			margin-bottom: 16px;
+		}
+		
+		.components-select-control {
+			margin-bottom: 16px;
+		}
+		
+		.components-text-control {
+			margin-bottom: 16px;
+		}
+		
+		.components-range-control {
+			margin-bottom: 16px;
+		}
+		
+		// Color picker styling
+		.components-color-picker {
+			margin-bottom: 16px;
+		}
+		
+		// Media upload button styling
+		.components-button.is-secondary {
+			width: 100%;
+			justify-content: center;
+			margin-top: 8px;
 		}
 	}
 }
-
