@@ -23,13 +23,12 @@
 			rgba(0, 124, 186, 0.05) 20px
 		);
 		border: 2px dashed rgba(0, 124, 186, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		
 		&::after {
-			content: 'Add columns';
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			content: "Add columns";
 			color: rgba(0, 124, 186, 0.7);
 			font-size: 14px;
 			font-weight: 500;
@@ -37,35 +36,31 @@
 		}
 	}
 	
-	// Column wrapper
+	// Column styling
 	.wp-block-column {
 		position: relative;
 		
-		// Column selection outline
 		&.is-selected {
 			outline: 1px solid #007cba;
 			outline-offset: -1px;
 		}
 		
-		// Empty column styling
 		&:empty {
 			min-height: 80px;
 			background: rgba(0, 124, 186, 0.05);
 			border: 1px dashed rgba(0, 124, 186, 0.3);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			
 			&::after {
-				content: 'Add content';
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
+				content: "Add content";
 				color: rgba(0, 124, 186, 0.7);
 				font-size: 12px;
 				pointer-events: none;
 			}
 		}
 		
-		// Block appender styling
 		.block-list-appender {
 			margin: 0;
 			
@@ -76,115 +71,26 @@
 	}
 }
 
-// Custom widths display
-.wpdsgn-custom-widths {
-	margin-top: 16px;
-	padding: 16px;
-	background: #f9f9f9;
-	border: 1px solid #e0e0e0;
-	border-radius: 4px;
-	
-	p {
-		margin: 0 0 12px 0;
-		font-weight: 500;
-		color: #1e1e1e;
-	}
-	
-	.components-unit-control {
-		margin-bottom: 12px;
+// Clean Inspector Controls styling
+.components-panel__body {
+	.components-base-control {
+		margin-bottom: 16px;
 		
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
-}
-
-// Alignment controls
-.wpdsgn-alignment-controls {
-	.wpdsgn-control-group {
-		&:not(:last-child) {
-			margin-bottom: 20px;
-			padding-bottom: 16px;
-			border-bottom: 1px solid #f0f0f0;
-		}
-	}
-}
-
-// Gap controls
-.wpdsgn-gap-controls {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 12px;
-}
-
-// Column settings
-.wpdsgn-column-settings {
-	.components-panel__body {
-		border: 1px solid #e0e0e0;
-		margin-bottom: 8px;
-		
-		&:last-child {
-			margin-bottom: 0;
-		}
-		
-		.components-panel__body-title {
-			background: #f9f9f9;
-			border-bottom: 1px solid #e0e0e0;
+	
+	.components-button-group {
+		.components-button {
+			font-size: 12px;
+			padding: 6px 12px;
 			
-			.components-button {
-				font-weight: 500;
+			&.is-pressed {
+				background: #007cba;
+				color: white;
+				border-color: #007cba;
 			}
-		}
-	}
-	
-	.components-color-picker {
-		margin-bottom: 16px;
-	}
-	
-	.components-box-control {
-		margin-bottom: 16px;
-	}
-	
-	.components-range-control {
-		margin-bottom: 16px;
-	}
-	
-	.components-select-control {
-		margin-bottom: 16px;
-	}
-	
-	.components-text-control {
-		margin-bottom: 16px;
-	}
-}
-
-// Preset layout buttons
-.wpdsgn-preset-layouts {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-	gap: 8px;
-	margin-top: 12px;
-	
-	.components-button {
-		aspect-ratio: 1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border: 2px solid #ddd;
-		background: #f9f9f9;
-		font-size: 11px;
-		font-weight: 500;
-		transition: all 0.2s ease;
-		
-		&.is-pressed {
-			background: #007cba;
-			color: white;
-			border-color: #007cba;
-		}
-		
-		&:hover:not(.is-pressed) {
-			background: #e0e0e0;
-			border-color: #ccc;
 		}
 	}
 }
