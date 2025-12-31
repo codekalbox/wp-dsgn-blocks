@@ -23,13 +23,12 @@
 			rgba(0, 124, 186, 0.05) 20px
 		);
 		border: 2px dashed rgba(0, 124, 186, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		
 		&::after {
-			content: attr(data-placeholder);
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			content: "Add content";
 			color: rgba(0, 124, 186, 0.7);
 			font-size: 14px;
 			font-weight: 500;
@@ -45,197 +44,29 @@
 			margin: 8px auto;
 		}
 	}
-	
-	// Nested block styling
-	.wp-block {
-		max-width: 100%;
-	}
 }
 
-// Inspector Controls Styling
-.wpdsgn-main-tabs {
-	.components-tab-panel__tabs {
-		display: flex;
-		border-bottom: 1px solid #e0e0e0;
+// Clean Inspector Controls styling
+.components-panel__body {
+	.components-base-control {
 		margin-bottom: 16px;
 		
-		.components-button {
-			flex: 1;
-			padding: 12px 16px;
-			border: none;
-			background: transparent;
-			border-bottom: 2px solid transparent;
-			font-weight: 500;
-			transition: all 0.2s ease;
-			
-			&.is-active {
-				color: #007cba;
-				border-bottom-color: #007cba;
-				background: rgba(0, 124, 186, 0.05);
-			}
-			
-			&:hover:not(.is-active) {
-				background: rgba(0, 0, 0, 0.05);
-			}
+		&:last-child {
+			margin-bottom: 0;
 		}
-	}
-}
-
-.wpdsgn-responsive-tabs {
-	.components-tab-panel__tabs {
-		display: flex;
-		gap: 4px;
-		margin-bottom: 12px;
-		
-		.components-button {
-			flex: 1;
-			padding: 8px 12px;
-			border: 1px solid #ddd;
-			background: #f9f9f9;
-			font-size: 12px;
-			font-weight: 500;
-			border-radius: 4px;
-			transition: all 0.2s ease;
-			
-			&.is-active {
-				background: #007cba;
-				color: white;
-				border-color: #007cba;
-			}
-			
-			&:hover:not(.is-active) {
-				background: #e0e0e0;
-				border-color: #ccc;
-			}
-		}
-	}
-}
-
-.wpdsgn-background-tabs {
-	.components-tab-panel__tabs {
-		display: flex;
-		gap: 2px;
-		margin-bottom: 16px;
-		
-		.components-button {
-			flex: 1;
-			padding: 10px 14px;
-			border: 1px solid #ddd;
-			background: #f9f9f9;
-			font-size: 13px;
-			font-weight: 500;
-			border-radius: 4px 4px 0 0;
-			transition: all 0.2s ease;
-			
-			&.is-active {
-				background: white;
-				border-bottom-color: white;
-				position: relative;
-				z-index: 1;
-			}
-			
-			&:hover:not(.is-active) {
-				background: #e0e0e0;
-			}
-		}
-	}
-	
-	.components-tab-panel__tab-content {
-		border: 1px solid #ddd;
-		border-top: none;
-		padding: 16px;
-		background: white;
-		border-radius: 0 0 4px 4px;
-	}
-}
-
-// Control Groups
-.wpdsgn-control-group {
-	margin-bottom: 16px;
-	
-	.wpdsgn-control-label {
-		display: block;
-		margin-bottom: 8px;
-		font-weight: 500;
-		font-size: 13px;
-		color: #1e1e1e;
 	}
 	
 	.components-button-group {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 4px;
-		
 		.components-button {
-			flex: 1;
-			min-width: 0;
-			padding: 8px 12px;
 			font-size: 12px;
-			border: 1px solid #ddd;
-			background: #f9f9f9;
-			transition: all 0.2s ease;
+			padding: 6px 12px;
 			
 			&.is-pressed {
 				background: #007cba;
 				color: white;
 				border-color: #007cba;
 			}
-			
-			&:hover:not(.is-pressed) {
-				background: #e0e0e0;
-				border-color: #ccc;
-			}
 		}
-	}
-}
-
-// Flexbox Controls
-.wpdsgn-flexbox-controls {
-	.wpdsgn-control-group {
-		&:not(:last-child) {
-			margin-bottom: 20px;
-			padding-bottom: 16px;
-			border-bottom: 1px solid #f0f0f0;
-		}
-	}
-}
-
-// Gap Controls
-.wpdsgn-gap-controls {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 12px;
-}
-
-// Spacing Controls
-.wpdsgn-spacing-controls {
-	.components-box-control {
-		margin-bottom: 16px;
-	}
-}
-
-// Background Content
-.wpdsgn-bg-content {
-	.components-color-picker {
-		margin-bottom: 16px;
-	}
-	
-	.components-range-control {
-		margin-bottom: 16px;
-	}
-	
-	.components-gradient-picker {
-		margin-bottom: 16px;
-	}
-	
-	.components-button {
-		&:not(.components-button-group .components-button) {
-			margin-bottom: 12px;
-		}
-	}
-	
-	.components-select-control {
-		margin-bottom: 16px;
 	}
 }
 
